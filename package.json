@@ -1,0 +1,84 @@
+{
+  "name": "resonance",
+  "productName": "Résonance",
+  "version": "0.1.0",
+  "description": "Visual novel adaptatif mené par une IA",
+  "private": true,
+  "type": "module",
+  "main": "./out/main/index.js",
+  "author": "jkebaili",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "jouer": "electron-vite build && electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "electron-vite build && electron ./out/main/index.js --smoke",
+    "dist": "electron-vite build && electron-builder --win",
+    "dist:all": "electron-vite build && electron-builder -wml"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@fontsource-variable/cinzel": "^5.3.0",
+    "@fontsource-variable/cormorant-garamond": "^5.3.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/lora": "^5.3.0",
+    "@fontsource/opendyslexic": "^5.3.0",
+    "@types/node": "^24.9.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "electron": "^45.3.1",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0",
+    "zustand": "^5.1.0"
+  },
+  "build": {
+    "appId": "fr.resonance.jeu",
+    "productName": "Résonance",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*",
+      "packs/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "packs",
+        "to": "packs"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "Résonance"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.games"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Game"
+    }
+  }
+}

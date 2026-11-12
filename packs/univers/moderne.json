@@ -1,0 +1,79 @@
+{
+  "id": "moderne",
+  "nom": "Moderne",
+  "accroche": "Une grande école d'élite, des badges, des galas, et dans les couloirs des choses qui ne figurent sur aucune brochure.",
+  "description": "Notre époque, ou presque : une ville universitaire, des téléphones, des classements internationaux. La grande école qui la domine forme depuis deux siècles ceux qui dirigeront le pays. Certains élèves y ont des « dispositions » dont on ne parle qu'à mots couverts : une intuition trop juste, une voix qui apaise, une porte qui s'ouvre quand elle ne devrait pas. Le surnaturel y reste discret, presque administratif ; les vrais rapports de force sont sociaux.",
+  "theme": "moderne",
+  "premisse": "Vous êtes boursier, le premier de votre famille à faire des études, avec un travail du soir et un ordinateur d'occasion. Par un concours de circonstances — un désistement, un dossier remonté de la pile, une signature que personne ne retrouve —, vous êtes admis dans la grande école la plus fermée du pays. Vos camarades portent des noms qu'on lit sur les bâtiments. Vous, vous cherchez encore la cafétéria.",
+  "cadre": "Un campus d'élite contemporain, moitié pierre ancienne, moitié verre : grand amphithéâtre, bibliothèque ouverte tard, cafétéria aux tables tacitement réservées, gymnase et salle d'escrime, résidence étudiante, bâtiment historique dont une aile reste fermée « pour travaux ». Autour, une ville étudiante avec ses cafés, ses petits boulots et ses trajets en tram. Le surnaturel doit rester léger et rare : jamais spectaculaire, toujours plausible à moitié.",
+  "factions": [
+    "Les héritiers : familles fondatrices, anciens élèves et grands donateurs",
+    "La direction et le corps enseignant, soucieux du classement et de la discrétion",
+    "Le bureau des élèves et les associations, où se font et se défont les réputations",
+    "Les boursiers, le personnel et la ville : ceux qui font tourner le campus"
+  ],
+  "archetypes": [
+    "L'héritière brillante et distante dont la famille finance la bibliothèque, à crédit",
+    "La maîtresse de conférences trop jeune pour son poste et trop bien informée",
+    "L'étudiante mise à l'écart après un scandale qui n'était pas le sien",
+    "La prodige en mathématiques qui parle mieux aux équations qu'aux gens",
+    "La capitaine de l'équipe d'escrime, qui porte l'école sur ses épaules",
+    "La présidente du bureau des élèves, charmante, redoutable, toujours en campagne"
+  ],
+  "styleImage": "Contemporary elite university campus, present day, mix of old stone buildings and modern glass architecture, natural daylight, autumn trees, lecture halls, cafeteria, student residence at night with warm window lights, smart casual clothing and blazers, subtle uncanny details, clean cinematic lighting, soft realistic palette",
+  "tons": [
+    "comédie de campus tendre",
+    "chronique sociale mordante",
+    "étrangeté discrète",
+    "romance au long cours"
+  ],
+  "emploiDuTemps": {
+    "matin": "Cours en amphithéâtre",
+    "midi": "Cafétéria",
+    "apres-midi": "Travaux dirigés et associations",
+    "soir": "Temps libre, bibliothèque ou ville",
+    "nuit": "Résidence étudiante"
+  },
+  "evenements": [
+    {
+      "jour": 4,
+      "nom": "Week-end d'intégration",
+      "description": "Deux jours hors du campus avec toute la promotion. On y apprend qui parle à qui."
+    },
+    {
+      "jour": 9,
+      "nom": "Forum des associations",
+      "description": "Chaque association recrute. Certaines ne distribuent pas de tracts : elles choisissent."
+    },
+    {
+      "jour": 16,
+      "nom": "Premier contrôle continu",
+      "description": "Première note de l'année. Les boursiers doivent tenir une moyenne."
+    },
+    {
+      "jour": 23,
+      "nom": "Conférence d'un ancien élève",
+      "description": "Un nom célèbre revient parler dans le grand amphithéâtre. Le cocktail qui suit compte davantage que le discours."
+    },
+    {
+      "jour": 30,
+      "nom": "Gala d'automne",
+      "description": "Tenue de soirée exigée, billets hors de prix. Il existe des moyens d'y entrer autrement."
+    },
+    {
+      "jour": 38,
+      "nom": "Tournoi inter-écoles",
+      "description": "Escrime, débat et aviron contre l'école rivale. L'honneur de la maison est en jeu, paraît-il."
+    },
+    {
+      "jour": 47,
+      "nom": "Nuit blanche de la bibliothèque",
+      "description": "La bibliothèque reste ouverte jusqu'à l'aube avant les examens. Café, entraide, confidences."
+    },
+    {
+      "jour": 58,
+      "nom": "Partiels",
+      "description": "Une semaine d'épreuves. Le classement de fin de semestre décide des bourses."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "fantasy",
+  "nom": "Fantasy classique",
+  "accroche": "Une académie royale, des blasons plein les murs, et vous, entré par la petite porte.",
+  "description": "Un vieux royaume de châteaux, de guildes et de grandes maisons, où la magie s'enseigne comme l'escrime : au rang autant qu'au talent. On y trouve des tournois, des bibliothèques fermées après la cloche et des professeurs qui en savent trop. Le merveilleux y est quotidien ; ce qui surprend, ce sont les gens. Derrière les serments et les armoiries, la politique fait plus de dégâts que les dragons.",
+  "theme": "fantasy",
+  "premisse": "Vous êtes un roturier pauvre, de ceux qu'on ne regarde pas. Par un concours de circonstances que personne ne s'explique vraiment, vous voilà admis dans la plus prestigieuse académie royale de magie et de combat, parmi les héritiers des grandes maisons. Vous n'avez ni nom, ni fortune, ni protecteur. Il va falloir tenir, apprendre vite, et comprendre pourquoi l'on vous a ouvert la porte.",
+  "cadre": "Une académie royale ancienne, perchée au-dessus d'une ville marchande : amphithéâtres, lice d'entraînement, réfectoire aux tables de maisons, tours d'étude, dortoirs hiérarchisés. Elle a ses propres lois, ses rites de rentrée et ses rivalités de promotion. Prévoir une ville basse vivante à portée de marche, et un ou deux lieux où les élèves n'ont pas le droit d'aller.",
+  "factions": [
+    "La haute noblesse d'épée, gardienne des traditions et des privilèges du sang",
+    "L'ordre des mages et des maîtres, jaloux de son savoir et de son indépendance",
+    "L'administration de la Couronne : chancellerie, sceaux, inspecteurs et bourses",
+    "Le petit peuple : gens de service, artisans et guildes de la ville basse"
+  ],
+  "archetypes": [
+    "La noble hautaine dont la morgue cache une maison en ruine",
+    "La professeure mystérieuse qui a d'excellentes raisons de se taire",
+    "La paria au nom rayé, plus joyeuse que tous ceux qui l'évitent",
+    "La génie incomprise dont la théorie dérange l'ordre établi",
+    "La chevalière modèle qui commence à douter de son serment",
+    "La fille de marchands qui rachète ce que les nobles ne peuvent plus payer"
+  ],
+  "styleImage": "Classic high fantasy royal academy, late medieval to early Renaissance European architecture, stone cloisters and vaulted halls, heraldic banners, warm candlelight indoors and soft stained-glass daylight, wool and leather uniforms with brass buttons, wooden training swords, painterly lighting, rich but slightly muted colours",
+  "tons": [
+    "léger et malicieux",
+    "romanesque et chaleureux",
+    "intrigue de cour feutrée",
+    "aventure à pas lents"
+  ],
+  "emploiDuTemps": {
+    "matin": "Cours magistraux",
+    "midi": "Réfectoire",
+    "apres-midi": "Lice ou travaux pratiques",
+    "soir": "Temps libre",
+    "nuit": "Dortoirs"
+  },
+  "evenements": [
+    {
+      "jour": 5,
+      "nom": "Foire d'automne",
+      "description": "La ville basse dresse ses étals : première sortie autorisée, bourse légère et tentations nombreuses."
+    },
+    {
+      "jour": 10,
+      "nom": "Première passe d'armes",
+      "description": "Évaluation à la lice, par binômes, devant toute la promotion."
+    },
+    {
+      "jour": 17,
+      "nom": "Examen des premiers accords",
+      "description": "Épreuve pratique de magie : un sortilège simple, exécuté seul devant les maîtres."
+    },
+    {
+      "jour": 24,
+      "nom": "Bal des Blasons",
+      "description": "Soirée officielle où chaque maison paraît sous ses couleurs. Il faut un habit, et quelqu'un avec qui entrer."
+    },
+    {
+      "jour": 31,
+      "nom": "Fête des Lanternes",
+      "description": "La ville et l'académie s'illuminent ; on écrit un vœu sur une lanterne, et les professeurs consentent enfin à retenir les noms."
+    },
+    {
+      "jour": 38,
+      "nom": "Sortie d'herborisation",
+      "description": "Deux jours en forêt royale avec les maîtres : bivouac, récolte de simples et histoires au coin du feu."
+    },
+    {
+      "jour": 46,
+      "nom": "Tournoi des Lames",
+      "description": "Le grand tournoi d'escrime de l'académie, ouvert aux familles. Les réputations s'y font en une après-midi."
+    },
+    {
+      "jour": 58,
+      "nom": "Examens du trimestre",
+      "description": "Écrits et oraux dans toutes les matières. Les résultats décident de qui reste."
+    }
+  ]
+}

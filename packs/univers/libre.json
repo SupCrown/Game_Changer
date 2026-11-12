@@ -1,0 +1,73 @@
+{
+  "id": "libre",
+  "nom": "Univers libre",
+  "accroche": "Votre monde, vos règles : décrivez-le en quelques lignes, le jeu s'occupe du reste.",
+  "description": "Un cadre volontairement ouvert, sans époque ni décor imposés. Vous décrivez le monde que vous voulez — station orbitale, cour de la Renaissance, archipel de corsaires, troupe de théâtre itinérante — et le jeu en tire des lieux, des factions et une distribution. La structure reste la même : un quotidien qui donne envie de rester, des relations qui se méritent, un secret qui prend son temps.",
+  "theme": "libre",
+  "premisse": "Vous êtes un nouveau venu, sans appui ni réputation, dans un lieu où tout le monde se connaît déjà. Par un concours de circonstances, on vous y a fait une place que beaucoup jugent imméritée. Il vous faudra apprendre les usages, trouver des alliés et gagner le droit de rester. Décrivez le reste : le jeu s'y adaptera.",
+  "cadre": "Un lieu de vie principal où le héros passe ses journées et où les mêmes personnes se croisent : école, vaisseau, palais, troupe, comptoir, monastère. Il doit offrir des espaces communs (repas, travail, entraînement), des espaces privés, un endroit interdit ou réservé, et un extérieur accessible. À adapter entièrement à la description du joueur.",
+  "factions": [
+    "Les établis : ceux qui détiennent le prestige et les privilèges",
+    "Les gardiens du savoir : ceux qui forment, jugent et transmettent",
+    "L'autorité : ceux qui administrent, financent et surveillent",
+    "Les invisibles : ceux qui font tourner le lieu sans jamais être consultés"
+  ],
+  "archetypes": [
+    "La privilégiée hautaine dont l'assurance est une armure",
+    "La mentore énigmatique qui en sait plus qu'elle n'en dit",
+    "L'exclue que le groupe a rejetée pour une faute qui n'était pas la sienne",
+    "La prodige incomprise dont les idées dérangent",
+    "La rivale loyale, adversaire avant d'être alliée",
+    "L'ambitieuse charmante qui joue toujours un coup d'avance"
+  ],
+  "styleImage": "Adapt entirely to the setting described by the player: keep one consistent era, material palette and lighting mood across all images; painterly semi-realistic rendering, soft natural light, clear readable silhouettes, adult characters, fully clothed, uncluttered backgrounds",
+  "tons": [
+    "léger et malicieux",
+    "chaleureux et romanesque",
+    "intrigue à combustion lente"
+  ],
+  "emploiDuTemps": {
+    "matin": "Travail ou enseignement du matin",
+    "midi": "Repas en commun",
+    "apres-midi": "Pratique et exercices",
+    "soir": "Temps libre",
+    "nuit": "Quartiers de repos"
+  },
+  "evenements": [
+    {
+      "jour": 5,
+      "nom": "Première sortie",
+      "description": "Le groupe quitte le lieu principal pour une journée. Occasion de voir chacun hors de son rôle."
+    },
+    {
+      "jour": 10,
+      "nom": "Première évaluation",
+      "description": "Le héros est jugé pour la première fois sur ce qu'il sait faire, devant les autres."
+    },
+    {
+      "jour": 18,
+      "nom": "Fête de la saison",
+      "description": "Une célébration propre à ce monde : on y mange, on y danse, on y parle plus librement."
+    },
+    {
+      "jour": 26,
+      "nom": "Grande réception",
+      "description": "Un événement mondain où il faut paraître, et arriver accompagné."
+    },
+    {
+      "jour": 35,
+      "nom": "Compétition",
+      "description": "Tournoi, concours ou joute : les rivalités s'y règlent en public."
+    },
+    {
+      "jour": 45,
+      "nom": "Expédition",
+      "description": "Plusieurs jours loin du quotidien, en petit groupe. Les liens s'y resserrent ou s'y défont."
+    },
+    {
+      "jour": 58,
+      "nom": "Épreuves de fin de période",
+      "description": "Le bilan : ceux qui restent, ceux qui partent, et ce que chacun a gagné."
+    }
+  ]
+}

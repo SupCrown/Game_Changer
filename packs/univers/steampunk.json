@@ -1,0 +1,79 @@
+{
+  "id": "steampunk",
+  "nom": "Steampunk",
+  "accroche": "Du cuivre, de la vapeur, des brevets, et une bourse d'étude tombée dans la mauvaise boîte aux lettres : la vôtre.",
+  "description": "Une capitale d'industrie sous un ciel de dirigeables, où l'éther se canalise dans des tubes de laiton et où un brevet vaut un titre de noblesse. Les dynasties d'ingénieurs y règnent sur les fonderies comme d'autres sur des provinces. Le progrès y est une religion, avec ses hérétiques. Les machines sont fiables ; ce sont les actionnaires qui ne le sont pas.",
+  "theme": "steampunk",
+  "premisse": "Vous sortez des ateliers, les mains noires et la paie maigre. Par un concours de circonstances — une réparation de fortune faite sous les yeux de la bonne personne, ou de la mauvaise —, vous recevez une bourse pour l'Institut impérial, où les héritiers des dynasties industrielles apprennent la mécanique de l'éther et le duel au sabre à ressort. Vous savez comment tournent les machines. Reste à comprendre comment tournent ceux qui les possèdent.",
+  "cadre": "Un institut technique monumental, tout de fonte et de verrières : amphithéâtre aux tableaux mécaniques, ateliers et bancs d'essai, salle d'armes, réfectoire à monte-plats, observatoire, internat aux étages numérotés par rang. Autour, la ville : gares, fonderies, quais d'aéronefs, cafés d'inventeurs et quartiers ouvriers.",
+  "factions": [
+    "Les dynasties industrielles, propriétaires des brevets et des fonderies",
+    "L'Académie des ingénieurs et le corps professoral, gardiens de la méthode",
+    "Le ministère et l'état-major, qui financent la recherche et en attendent des armes",
+    "Les ateliers : ouvriers, mécaniciens et syndicats de la ville basse"
+  ],
+  "archetypes": [
+    "L'héritière d'un empire de l'acier, glaciale parce que tout le monde lui doit de l'argent",
+    "La professeure d'éthérodynamique dont la moitié des travaux est classée",
+    "L'ancienne élève radiée après un accident, qui répare les machines de l'institut sans en avoir le droit",
+    "L'inventrice de génie dont personne ne veut breveter l'idée",
+    "La pilote d'aéronef détachée à l'institut contre son gré",
+    "La journaliste inscrite sous un faux nom pour mener son enquête"
+  ],
+  "styleImage": "Steampunk imperial technical institute, late 19th century industrial capital, brass pipes, copper and riveted iron, glass-and-iron halls, airships in a hazy sky, gaslight and furnace glow, leather aprons, goggles, tailored wool uniforms, warm sepia and teal palette, soft steam diffusion",
+  "tons": [
+    "pétillant et inventif",
+    "satire sociale souriante",
+    "intrigue industrielle tendue",
+    "aventure romanesque"
+  ],
+  "emploiDuTemps": {
+    "matin": "Cours théoriques en amphithéâtre",
+    "midi": "Réfectoire à monte-plats",
+    "apres-midi": "Ateliers et bancs d'essai",
+    "soir": "Temps libre, cafés ou ville",
+    "nuit": "Internat"
+  },
+  "evenements": [
+    {
+      "jour": 4,
+      "nom": "Visite des fonderies",
+      "description": "Toute la promotion descend dans la ville basse. Pour vous, c'est un retour ; pour eux, une curiosité."
+    },
+    {
+      "jour": 10,
+      "nom": "Premier banc d'essai noté",
+      "description": "Chaque binôme fait tourner son premier mécanisme devant le jury. Ce qui fuit est compté."
+    },
+    {
+      "jour": 16,
+      "nom": "Régate des aéronefs",
+      "description": "Les équipages de l'institut s'affrontent au-dessus du fleuve. Toute la ville lève la tête."
+    },
+    {
+      "jour": 24,
+      "nom": "Bal de la Vapeur",
+      "description": "Soirée des dynasties sous la grande verrière. On y danse, on y signe des contrats."
+    },
+    {
+      "jour": 32,
+      "nom": "Exposition des prototypes",
+      "description": "Les ateliers ouvrent au public et aux investisseurs. Une bonne idée peut y changer de propriétaire."
+    },
+    {
+      "jour": 40,
+      "nom": "Concours des automates",
+      "description": "Épreuve reine des deuxièmes années ; les premières servent d'assistants, et apprennent beaucoup."
+    },
+    {
+      "jour": 48,
+      "nom": "Assaut au sabre à ressort",
+      "description": "Tournoi de la salle d'armes, arbitré au chronomètre."
+    },
+    {
+      "jour": 58,
+      "nom": "Examens de fin de trimestre",
+      "description": "Calcul, dessin, atelier. Les bourses sont reconduites, ou non."
+    }
+  ]
+}

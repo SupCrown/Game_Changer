@@ -1,0 +1,79 @@
+{
+  "id": "gothique",
+  "nom": "Gothique",
+  "accroche": "Un collège sur la falaise, des vitraux noircis, et des leçons du soir qu'on ne choisit pas tout à fait.",
+  "description": "Un pays de landes, de brouillards et de vieilles familles qui s'éteignent avec dignité. On y enseigne les sciences occultes comme une médecine honteuse : indispensable, peu fréquentable. Les fantômes y sont moins inquiétants que les testaments. L'humour y est noir, la tendresse rare, et d'autant plus précieuse.",
+  "theme": "gothique",
+  "premisse": "Vous avez grandi chez un fossoyeur de campagne, et l'on vous a fait boursier par charité autant que par erreur d'écriture. Vous voilà admis au collège le plus fermé du pays, bâti sur une falaise, où les héritiers des vieilles lignées apprennent l'escrime, la théologie et ce qu'on appelle prudemment les sciences du seuil. Vous n'avez pour vous qu'un manteau trop grand et l'habitude des cimetières. Ici, cela pourrait bien être un avantage.",
+  "cadre": "Un collège-abbaye accroché à une falaise battue par la mer : cloître, chapelle désaffectée devenue salle d'armes, amphithéâtre d'anatomie, bibliothèque à galeries, crypte interdite, dortoirs glacés. En contrebas, un village de pêcheurs superstitieux. Le brouillard, les cloches et le couvre-feu rythment les journées.",
+  "factions": [
+    "Les vieilles lignées déclinantes, riches de portraits et pauvres de tout le reste",
+    "L'ordre religieux qui administre le collège et surveille ce qu'on y enseigne",
+    "Les naturalistes et les médecins, rationalistes à qui les fantômes font perdre patience",
+    "Les gens du village et du service, superstitieux, bavards et rarement dans l'erreur"
+  ],
+  "archetypes": [
+    "L'héritière pâle d'une lignée dite maudite, bien plus drôle que sa réputation",
+    "La doctoresse rationaliste qui refuse de croire ce qu'elle a pourtant vu",
+    "La novice en rupture de vœux, trop curieuse pour son ordre",
+    "La veilleuse de nuit taciturne qui connaît tous les couloirs",
+    "La bibliothécaire insomniaque qui prête des livres qu'elle ne devrait pas",
+    "La comédienne déchue réfugiée au collège sous un nom d'emprunt"
+  ],
+  "styleImage": "Gothic Victorian college built on a sea cliff, late 19th century, fog and overcast daylight, candlelight and gas lamps indoors, dark carved wood, wrought iron, tall stained glass in deep reds and blues, black wool coats and high collars, muted desaturated palette with warm candle highlights",
+  "tons": [
+    "mélancolique et tendre",
+    "humour noir pince-sans-rire",
+    "frisson feutré",
+    "romantisme sombre"
+  ],
+  "emploiDuTemps": {
+    "matin": "Leçons au grand amphithéâtre",
+    "midi": "Réfectoire voûté",
+    "apres-midi": "Escrime, herbier ou salle d'anatomie",
+    "soir": "Étude à la chandelle",
+    "nuit": "Dortoirs et couvre-feu"
+  },
+  "evenements": [
+    {
+      "jour": 4,
+      "nom": "Veillée des Cierges",
+      "description": "Toute la maison veille dans la chapelle jusqu'à minuit. On y chuchote plus qu'on n'y prie."
+    },
+    {
+      "jour": 9,
+      "nom": "Leçon d'anatomie publique",
+      "description": "Le grand amphithéâtre ouvre ses gradins au village. Tenir debout jusqu'au bout est déjà une note."
+    },
+    {
+      "jour": 15,
+      "nom": "Foire aux corbeaux",
+      "description": "Marché d'automne au village : remèdes de bonne femme, diseuses de sort et beignets chauds."
+    },
+    {
+      "jour": 22,
+      "nom": "Examen des sciences du seuil",
+      "description": "Première épreuve pratique, à la tombée du jour, sous l'œil de l'ordre."
+    },
+    {
+      "jour": 29,
+      "nom": "Bal masqué des Vieilles Lignées",
+      "description": "Une nuit par an, on ne demande pas son nom à qui porte un masque. Les familles s'y observent."
+    },
+    {
+      "jour": 36,
+      "nom": "Grande marée",
+      "description": "La mer découvre la grève jusqu'aux rochers : sortie de toute la promotion, lanternes et paniers."
+    },
+    {
+      "jour": 44,
+      "nom": "Assaut d'hiver",
+      "description": "Le tournoi d'escrime du collège, dans l'ancienne chapelle, à la lueur des torches."
+    },
+    {
+      "jour": 57,
+      "nom": "Examens du solstice",
+      "description": "Écrits, oraux et dissection. Les boursiers jouent leur place."
+    }
+  ]
+}

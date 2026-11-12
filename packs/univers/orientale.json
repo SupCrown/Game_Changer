@@ -1,0 +1,79 @@
+{
+  "id": "orientale",
+  "nom": "Fantasy orientale",
+  "accroche": "Une école impériale au-dessus du fleuve, mille pinceaux, cent sabres, et une place qu'on vous a donnée sans vous dire pourquoi.",
+  "description": "Un empire de fleuves, de montagnes à pavillons et de villes-marchés où se croisent jonques et caravanes. Le pouvoir s'y gagne aux examens autant qu'au sabre, et la magie passe par le souffle, l'encre et le geste juste. Les grandes familles s'y affrontent à coups de poèmes, de mariages et de tasses de thé. L'étiquette y est une arme ; savoir quand se taire, un art majeur.",
+  "theme": "orientale",
+  "premisse": "Vous avez grandi sur les quais, à porter l'eau et les ballots des autres. Par un concours de circonstances — une place vacante, un sceau apposé sur le mauvais rouleau, peut-être autre chose —, vous êtes admis à l'école impériale où l'on forme les lettrés-magiciens et les maîtres d'armes de l'empire. Vos condisciples portent des noms de clans vieux de dix siècles. Vous portez encore l'odeur du fleuve, et il va falloir apprendre à saluer.",
+  "cadre": "Une école impériale bâtie en terrasses au-dessus d'une ville-fleuve : pavillon de calligraphie, cour des sabres, salle de thé des maîtres, jardin de rocaille, bibliothèque des rouleaux, dortoirs par clans. Les examens y sont un rite, les repas un champ de bataille de préséances. En bas, les marchés flottants, les maisons de thé et les temples.",
+  "factions": [
+    "Les grands clans héréditaires, alliés et rivaux depuis dix siècles",
+    "Les lettrés-fonctionnaires issus des examens, gardiens des rites et des registres",
+    "Les ordres monastiques des montagnes, dépositaires des arts du souffle",
+    "Les guildes marchandes et les gens du fleuve, qui financent tout et ne siègent nulle part"
+  ],
+  "archetypes": [
+    "L'héritière de clan irréprochable, épuisée par sa propre perfection",
+    "La maîtresse de calligraphie énigmatique, écartée de la cour pour un poème",
+    "La fille d'un clan disgracié, servante de l'école et meilleure lame que ses maîtres",
+    "L'astronome prodige dont les calculs contredisent le calendrier officiel",
+    "La nonne-guerrière descendue de sa montagne, perplexe devant la ville",
+    "La fille de marchands qui connaît le prix de tout, secrets compris"
+  ],
+  "styleImage": "East Asian inspired imperial academy, terraced pavilions with curved tiled roofs above a river city, paper lanterns, ink-wash atmosphere, layered silk robes, lacquered wood and folding screens, soft morning mist, warm lantern glow at night, elegant muted palette with vermilion and jade accents",
+  "tons": [
+    "élégant et contemplatif",
+    "espiègle et piquant",
+    "intrigue de palais à voix basse",
+    "épopée martiale retenue"
+  ],
+  "emploiDuTemps": {
+    "matin": "Classiques et calligraphie",
+    "midi": "Salle des repas",
+    "apres-midi": "Cour des sabres et arts du souffle",
+    "soir": "Thé, étude ou ville-fleuve",
+    "nuit": "Pavillons des dortoirs"
+  },
+  "evenements": [
+    {
+      "jour": 4,
+      "nom": "Marché flottant",
+      "description": "Première sortie en ville : barques chargées de fruits, d'encres et de rumeurs."
+    },
+    {
+      "jour": 9,
+      "nom": "Examen de calligraphie",
+      "description": "Un seul caractère, tracé devant les maîtres. Le souffle compte autant que le trait."
+    },
+    {
+      "jour": 15,
+      "nom": "Fête de la Mi-Automne",
+      "description": "Gâteaux de lune sur les terrasses ; on regarde le ciel, et qui s'assoit à côté de qui."
+    },
+    {
+      "jour": 23,
+      "nom": "Joute des Cinq Pavillons",
+      "description": "Tournoi de sabre entre pavillons. Les clans y règlent poliment de vieux comptes."
+    },
+    {
+      "jour": 30,
+      "nom": "Concours de poèmes",
+      "description": "Chacun compose sur un thème imposé. Un vers peut faire une carrière, ou la défaire."
+    },
+    {
+      "jour": 37,
+      "nom": "Pèlerinage au monastère",
+      "description": "Trois jours de marche en montagne avec les maîtres du souffle. On y dort peu, on y parle vrai."
+    },
+    {
+      "jour": 45,
+      "nom": "Lanternes du fleuve",
+      "description": "On confie un vœu à une lanterne et la lanterne au courant. Toute la ville descend sur les quais."
+    },
+    {
+      "jour": 58,
+      "nom": "Examens d'hiver",
+      "description": "Trois jours d'épreuves en cellule. Le classement est affiché sur le mur d'honneur."
+    }
+  ]
+}

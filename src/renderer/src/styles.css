@@ -1,0 +1,228 @@
+@import '@fontsource-variable/cinzel';
+@import '@fontsource-variable/cormorant-garamond';
+@import '@fontsource-variable/lora';
+@import '@fontsource-variable/inter';
+@import '@fontsource/opendyslexic';
+
+/* ───────────── Thèmes : une palette et une typographie par univers ───────────── */
+:root {
+  --fond: #0b0d14;
+  --fond-2: #131726;
+  --panneau: rgba(16, 19, 32, 0.86);
+  --panneau-plein: #141828;
+  --bord: rgba(214, 190, 138, 0.22);
+  --texte: #ece7dc;
+  --texte-doux: #a9a59b;
+  --accent: #d9b56d;
+  --accent-2: #8fb4e6;
+  --danger: #e07a6e;
+  --succes: #86cf9e;
+  --police-titre: 'Cinzel Variable', 'Cormorant Garamond Variable', Georgia, serif;
+  --police-recit: 'Lora Variable', Georgia, serif;
+  --police-ui: 'Inter Variable', system-ui, sans-serif;
+  --echelle: 1;
+  --rayon: 10px;
+}
+[data-theme='gothique'] { --fond: #0c090c; --fond-2: #1a1016; --panneau: rgba(22, 13, 18, 0.88); --panneau-plein: #1b1118; --bord: rgba(190, 120, 130, 0.25); --accent: #c9606e; --accent-2: #b9a3c9; --police-titre: 'Cormorant Garamond Variable', Georgia, serif; }
+[data-theme='orientale'] { --fond: #0d0f0e; --fond-2: #15201c; --panneau: rgba(15, 22, 20, 0.88); --panneau-plein: #131c19; --bord: rgba(214, 120, 90, 0.26); --accent: #e0795a; --accent-2: #8fcfb3; --police-titre: 'Cormorant Garamond Variable', Georgia, serif; }
+[data-theme='steampunk'] { --fond: #100c08; --fond-2: #1f170e; --panneau: rgba(26, 19, 12, 0.88); --panneau-plein: #1e160e; --bord: rgba(205, 150, 84, 0.3); --accent: #d49a52; --accent-2: #7fb8b0; }
+[data-theme='moderne'] { --fond: #0a0d12; --fond-2: #111823; --panneau: rgba(13, 18, 27, 0.88); --panneau-plein: #111823; --bord: rgba(120, 190, 220, 0.22); --accent: #6fc3e0; --accent-2: #e0a36f; --police-titre: 'Inter Variable', system-ui, sans-serif; --police-recit: 'Inter Variable', system-ui, sans-serif; }
+[data-theme='libre'] { --accent: #b79cf0; --accent-2: #f0c28a; --bord: rgba(183, 156, 240, 0.24); }
+
+.dyslexie { --police-recit: 'OpenDyslexic', sans-serif; --police-ui: 'OpenDyslexic', sans-serif; }
+.contraste { --texte: #ffffff; --texte-doux: #d8d8d8; --panneau: rgba(0, 0, 0, 0.94); --panneau-plein: #000; --bord: rgba(255, 255, 255, 0.55); }
+
+* { box-sizing: border-box; }
+html, body, #racine { height: 100%; margin: 0; }
+body { background: var(--fond); color: var(--texte); font-family: var(--police-ui); font-size: calc(15px * var(--echelle)); overflow: hidden; user-select: none; -webkit-font-smoothing: antialiased; }
+button, input, textarea, select { font: inherit; color: inherit; }
+::selection { background: color-mix(in srgb, var(--accent) 45%, transparent); }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--accent) 35%, transparent); border-radius: 8px; border: 2px solid transparent; background-clip: padding-box; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+h1, h2, h3 { font-family: var(--police-titre); font-weight: 600; letter-spacing: 0.04em; margin: 0; }
+h2 { font-size: 1.35em; color: var(--accent); }
+h3 { font-size: 1.02em; color: var(--texte); letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.85; }
+p { margin: 0.4em 0; line-height: 1.55; }
+.doux { color: var(--texte-doux); }
+.petit { font-size: 0.86em; }
+.centre { text-align: center; }
+
+/* ───────────── Boutons et champs ───────────── */
+.btn { background: color-mix(in srgb, var(--accent) 12%, transparent); border: 1px solid var(--bord); border-radius: 8px; padding: 0.5em 1em; cursor: pointer; transition: background 0.15s, border-color 0.15s, transform 0.1s; }
+.btn:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 24%, transparent); border-color: var(--accent); }
+.btn:active:not(:disabled) { transform: translateY(1px); }
+.btn:disabled { opacity: 0.4; cursor: default; }
+.btn.plein { background: var(--accent); color: #17130a; border-color: var(--accent); font-weight: 600; }
+.btn.plein:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 85%, white); }
+.btn.fantome { background: transparent; border-color: transparent; }
+.btn.fantome:hover:not(:disabled) { background: rgba(255, 255, 255, 0.07); border-color: transparent; }
+.btn.danger { border-color: color-mix(in srgb, var(--danger) 60%, transparent); color: var(--danger); background: transparent; }
+.btn.petit { padding: 0.3em 0.7em; }
+.rangee { display: flex; gap: 0.6em; align-items: center; flex-wrap: wrap; }
+.pousse { margin-left: auto; }
+
+input[type='text'], input[type='password'], input[type='number'], textarea, select {
+  background: rgba(0, 0, 0, 0.35); border: 1px solid var(--bord); border-radius: 8px; padding: 0.5em 0.7em; width: 100%; user-select: text;
+}
+select option { background: var(--panneau-plein); }
+textarea { resize: vertical; line-height: 1.5; font-family: var(--police-recit); }
+input[type='range'] { accent-color: var(--accent); width: 100%; }
+input[type='checkbox'] { accent-color: var(--accent); width: 1.1em; height: 1.1em; }
+label.champ { display: block; margin: 0.8em 0; }
+label.champ > span { display: block; margin-bottom: 0.3em; font-size: 0.9em; color: var(--texte-doux); }
+label.bascule { display: flex; gap: 0.6em; align-items: center; margin: 0.6em 0; cursor: pointer; }
+.aide { font-size: 0.84em; color: var(--texte-doux); margin-top: 0.25em; line-height: 1.45; }
+
+.carte { background: rgba(255, 255, 255, 0.035); border: 1px solid var(--bord); border-radius: var(--rayon); padding: 0.9em 1em; }
+.carte.cliquable { cursor: pointer; transition: border-color 0.15s, background 0.15s, transform 0.15s; }
+.carte.cliquable:hover { border-color: var(--accent); background: rgba(255, 255, 255, 0.06); }
+.carte.choisie { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.grille { display: grid; gap: 0.8em; }
+.grille.deux { grid-template-columns: repeat(2, 1fr); }
+.grille.trois { grid-template-columns: repeat(3, 1fr); }
+.jauge { height: 8px; border-radius: 6px; background: rgba(255, 255, 255, 0.09); overflow: hidden; }
+.jauge > i { display: block; height: 100%; border-radius: 6px; background: var(--accent); transition: width 0.6s ease; }
+.pastille { display: inline-block; padding: 0.12em 0.6em; border-radius: 999px; border: 1px solid var(--bord); font-size: 0.8em; color: var(--texte-doux); }
+.pastille.accent { color: var(--accent); border-color: var(--accent); }
+
+/* ───────────── Écran titre ───────────── */
+.titre-ecran { height: 100%; display: flex; position: relative; overflow: hidden; background: radial-gradient(ellipse at 30% 20%, #1c2340 0%, var(--fond) 60%); }
+.titre-ciel { position: absolute; inset: 0; }
+.titre-contenu { position: relative; z-index: 1; margin: auto 0 auto 9vw; max-width: 460px; }
+.titre-nom { font-family: var(--police-titre); font-size: 4.6em; letter-spacing: 0.22em; margin: 0; background: linear-gradient(180deg, #fff3d4, var(--accent)); -webkit-background-clip: text; color: transparent; filter: drop-shadow(0 4px 24px rgba(217, 181, 109, 0.25)); }
+.titre-sous { font-family: var(--police-recit); font-style: italic; color: var(--texte-doux); font-size: 1.15em; margin: 0.2em 0 2.2em; }
+.titre-menu { display: flex; flex-direction: column; gap: 0.55em; align-items: flex-start; }
+.titre-menu .btn { min-width: 270px; text-align: left; padding: 0.7em 1.1em; font-family: var(--police-titre); letter-spacing: 0.08em; font-size: 1.02em; }
+.titre-parties { position: relative; z-index: 1; margin: auto 7vw auto auto; width: min(460px, 38vw); max-height: 72vh; overflow: auto; }
+.titre-pied { position: absolute; bottom: 14px; left: 9vw; right: 7vw; display: flex; justify-content: space-between; color: var(--texte-doux); font-size: 0.82em; z-index: 1; }
+.avis { border-left: 3px solid var(--accent); padding: 0.5em 0.9em; background: rgba(255, 255, 255, 0.04); border-radius: 0 8px 8px 0; margin: 1em 0; font-size: 0.92em; line-height: 1.5; }
+.avis.attention { border-color: var(--danger); }
+
+/* ───────────── Nouvelle partie ───────────── */
+.nouvelle { height: 100%; overflow: auto; padding: 28px 5vw 110px; background: radial-gradient(ellipse at 70% 0%, #1c2340 0%, var(--fond) 55%); }
+.nouvelle section { margin-bottom: 2em; }
+.nouvelle h2 { margin-bottom: 0.7em; }
+.univers-carte h3 { color: var(--accent); text-transform: none; font-size: 1.15em; }
+.barre-bas { position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 5vw; background: linear-gradient(0deg, var(--fond) 55%, transparent); display: flex; gap: 1em; align-items: center; z-index: 5; }
+.attente { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.4em; background: radial-gradient(ellipse at 50% 40%, #1c2340 0%, var(--fond) 60%); }
+.orbe { width: 84px; height: 84px; border-radius: 50%; border: 2px solid var(--bord); border-top-color: var(--accent); animation: tourne 1.4s linear infinite; }
+@keyframes tourne { to { transform: rotate(360deg); } }
+
+/* ───────────── Scène ───────────── */
+.jeu { height: 100%; position: relative; overflow: hidden; background: #000; }
+.decor { position: absolute; inset: 0; }
+.decor img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 1.1s ease; }
+.decor::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, transparent 22%, transparent 55%, rgba(0, 0, 0, 0.72) 100%); pointer-events: none; }
+.meteo { position: absolute; inset: 0; pointer-events: none; }
+.sprites { position: absolute; inset: 0; pointer-events: none; }
+.sprite { position: absolute; bottom: -2%; height: 92%; aspect-ratio: 2 / 3; transform: translateX(-50%); transition: left 0.5s ease, opacity 0.45s ease, filter 0.45s ease, transform 0.45s ease; filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.55)); animation: respire 6s ease-in-out infinite; }
+.sprite img { width: 100%; height: 100%; object-fit: contain; object-position: bottom; }
+.sprite.retrait { filter: brightness(0.55) saturate(0.7) drop-shadow(0 12px 30px rgba(0, 0, 0, 0.55)); transform: translateX(-50%) scale(0.96); }
+.sprite.entree { animation: entree 0.5s ease, respire 6s ease-in-out 0.5s infinite; }
+@keyframes respire { 0%, 100% { translate: 0 0; } 50% { translate: 0 -0.5%; } }
+@keyframes entree { from { opacity: 0; translate: 0 3%; } to { opacity: 1; translate: 0 0; } }
+.sans-effets .sprite { animation: none; }
+.tremble { animation: tremble 0.5s linear; }
+@keyframes tremble { 10%, 50%, 90% { transform: translate(-7px, 3px); } 30%, 70% { transform: translate(7px, -3px); } }
+.flash { position: absolute; inset: 0; background: #fff; pointer-events: none; animation: flash 0.7s ease-out forwards; }
+@keyframes flash { from { opacity: 0.85; } to { opacity: 0; } }
+
+.barre-haut { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 0.4em; padding: 10px 16px; z-index: 6; background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent); }
+.barre-haut .date { font-family: var(--police-titre); letter-spacing: 0.08em; font-size: 0.95em; text-shadow: 0 1px 6px #000; }
+.barre-haut .lieu { color: var(--accent); margin-left: 0.8em; font-family: var(--police-recit); font-style: italic; text-shadow: 0 1px 6px #000; }
+.barre-haut .btn { padding: 0.32em 0.75em; font-size: 0.88em; background: rgba(0, 0, 0, 0.35); backdrop-filter: blur(6px); }
+.barre-haut .btn.actif { border-color: var(--accent); color: var(--accent); }
+.indicateur { display: inline-flex; align-items: center; gap: 0.5em; font-size: 0.85em; color: var(--texte-doux); padding: 0.3em 0.8em; border-radius: 999px; background: rgba(0, 0, 0, 0.45); backdrop-filter: blur(6px); }
+.indicateur i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 1s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.25; transform: scale(0.7); } }
+
+.bas { position: absolute; left: 0; right: 0; bottom: 0; padding: 0 4vw 22px; z-index: 5; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.boite { width: min(1080px, 100%); min-height: 148px; background: var(--panneau); border: 1px solid var(--bord); border-radius: 14px; padding: 22px 28px 20px; position: relative; backdrop-filter: blur(10px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); cursor: pointer; }
+.boite .nom { position: absolute; top: -17px; left: 24px; padding: 4px 18px; border-radius: 8px; font-family: var(--police-titre); letter-spacing: 0.08em; font-size: 1em; background: var(--panneau-plein); border: 1px solid var(--bord); color: var(--couleur-perso, var(--accent)); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4); }
+.boite .texte { font-family: var(--police-recit); font-size: 1.22em; line-height: 1.62; user-select: text; white-space: pre-wrap; }
+.boite .texte.narration { color: color-mix(in srgb, var(--texte) 88%, var(--accent-2)); font-style: italic; }
+.boite .texte.chuchote { font-style: italic; opacity: 0.82; font-size: 1.1em; }
+.boite .texte.direct { opacity: 0.6; }
+.boite .suite { position: absolute; right: 18px; bottom: 10px; color: var(--accent); animation: suite 1.1s ease-in-out infinite; font-size: 0.9em; }
+@keyframes suite { 50% { transform: translateY(4px); opacity: 0.4; } }
+.boite .plume { position: absolute; right: 18px; bottom: 10px; color: var(--texte-doux); font-size: 0.82em; font-style: italic; }
+
+.zone-action { width: min(1080px, 100%); display: flex; flex-direction: column; gap: 8px; animation: monte 0.35s ease; }
+@keyframes monte { from { opacity: 0; transform: translateY(8px); } }
+.pistes { display: flex; gap: 8px; flex-wrap: wrap; }
+.piste { background: rgba(0, 0, 0, 0.5); border: 1px solid var(--bord); border-radius: 999px; padding: 0.4em 1em; cursor: pointer; backdrop-filter: blur(6px); font-size: 0.95em; transition: all 0.15s; }
+.piste:hover { border-color: var(--accent); color: var(--accent); background: rgba(0, 0, 0, 0.7); }
+.piste kbd { opacity: 0.5; margin-right: 0.5em; font-family: var(--police-ui); font-size: 0.85em; }
+.piste.activite { border-style: dashed; }
+.saisie { display: flex; gap: 8px; background: var(--panneau); border: 1px solid var(--bord); border-radius: 12px; padding: 8px; backdrop-filter: blur(10px); }
+.saisie textarea { border: none; background: transparent; resize: none; height: 2.9em; font-size: 1.05em; padding: 0.35em 0.6em; }
+.saisie textarea:focus { outline: none; }
+
+.jet-carte { width: min(680px, 100%); background: var(--panneau); border: 1px solid var(--accent); border-radius: 14px; padding: 18px 22px; backdrop-filter: blur(10px); animation: monte 0.35s ease; }
+.jet-carte .motif { font-family: var(--police-recit); font-size: 1.15em; font-style: italic; margin: 0.3em 0 0.9em; }
+.de-zone { position: absolute; inset: 0; z-index: 20; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(3px); animation: apparait 0.25s ease; }
+.de-resultat { font-family: var(--police-titre); font-size: 1.7em; margin-top: 0.4em; text-shadow: 0 2px 12px #000; text-align: center; }
+.de-resultat.reussite { color: var(--succes); }
+.de-resultat.echec { color: var(--danger); }
+@keyframes apparait { from { opacity: 0; } }
+
+/* ───────────── Notifications, transition, erreurs ───────────── */
+.notifs { position: absolute; top: 58px; right: 16px; z-index: 30; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; pointer-events: none; }
+.notif { background: var(--panneau); border: 1px solid var(--bord); border-left: 3px solid var(--accent); border-radius: 8px; padding: 0.5em 0.9em; backdrop-filter: blur(8px); font-size: 0.92em; animation: glisse 0.35s ease; max-width: 380px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); }
+.notif.plus { border-left-color: var(--succes); }
+.notif.moins, .notif.refus { border-left-color: var(--danger); }
+.notif.palier, .notif.succes { border-left-color: #f3d27a; color: #f6e2a8; }
+@keyframes glisse { from { opacity: 0; transform: translateX(24px); } }
+.transition { position: absolute; inset: 0; z-index: 40; background: #05060a; display: flex; flex-direction: column; align-items: center; justify-content: center; animation: fondu 2.6s ease forwards; pointer-events: none; }
+.transition h1 { font-size: 2.6em; letter-spacing: 0.25em; color: var(--accent); }
+.transition p { font-family: var(--police-recit); font-style: italic; color: var(--texte-doux); font-size: 1.15em; }
+@keyframes fondu { 0% { opacity: 0; } 18%, 72% { opacity: 1; } 100% { opacity: 0; } }
+.erreur { width: min(1080px, 100%); background: color-mix(in srgb, var(--danger) 14%, var(--panneau-plein)); border: 1px solid var(--danger); border-radius: 12px; padding: 12px 16px; display: flex; gap: 12px; align-items: center; animation: monte 0.3s ease; }
+.erreur details { font-size: 0.8em; color: var(--texte-doux); user-select: text; }
+
+/* ───────────── Menu (grimoire) ───────────── */
+.voile { position: absolute; inset: 0; z-index: 50; background: rgba(4, 5, 9, 0.72); backdrop-filter: blur(5px); display: flex; align-items: center; justify-content: center; animation: apparait 0.2s ease; }
+.grimoire { width: min(1180px, 94vw); height: min(760px, 90vh); background: var(--panneau-plein); border: 1px solid var(--bord); border-radius: 16px; display: flex; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7); }
+.onglets { width: 196px; flex-shrink: 0; background: rgba(0, 0, 0, 0.28); border-right: 1px solid var(--bord); padding: 14px 8px; overflow: auto; display: flex; flex-direction: column; gap: 2px; }
+.onglets button { background: transparent; border: none; text-align: left; padding: 0.55em 0.9em; border-radius: 8px; cursor: pointer; color: var(--texte-doux); font-family: var(--police-titre); letter-spacing: 0.05em; font-size: 0.93em; }
+.onglets button:hover { background: rgba(255, 255, 255, 0.06); color: var(--texte); }
+.onglets button.actif { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
+.onglets hr { border: none; border-top: 1px solid var(--bord); width: 100%; margin: 6px 0; }
+.page { flex: 1; overflow: auto; padding: 26px 30px 34px; user-select: text; position: relative; }
+.page > h2 { margin-bottom: 0.9em; }
+.fermer { position: absolute; top: 14px; right: 16px; z-index: 2; }
+.ligne-table { display: grid; grid-template-columns: 1fr auto; gap: 0.8em; padding: 0.45em 0; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 0.4em 0.6em; border-bottom: 1px solid rgba(255, 255, 255, 0.07); font-size: 0.92em; }
+th { color: var(--texte-doux); font-weight: 500; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+.stat { text-align: center; padding: 0.7em 0.4em; }
+.stat b { display: block; font-family: var(--police-titre); font-size: 1.7em; color: var(--accent); }
+.stat small { color: var(--texte-doux); }
+.portrait { width: 84px; height: 104px; border-radius: 10px; overflow: hidden; background: rgba(0, 0, 0, 0.35); border: 1px solid var(--bord); flex-shrink: 0; }
+.portrait img { width: 100%; height: 190%; object-fit: cover; object-position: top; }
+.palier { display: flex; gap: 0.7em; align-items: baseline; padding: 0.25em 0; opacity: 0.45; }
+.palier.ok { opacity: 1; }
+.palier b { color: var(--accent); min-width: 2.4em; }
+.histo-scene { margin-bottom: 1.6em; }
+.histo-action { color: var(--accent-2); font-style: italic; margin: 0.6em 0; padding-left: 0.9em; border-left: 2px solid var(--accent-2); }
+.histo-ligne { font-family: var(--police-recit); line-height: 1.6; margin: 0.45em 0; }
+.histo-ligne b { font-family: var(--police-titre); font-size: 0.9em; letter-spacing: 0.05em; margin-right: 0.5em; }
+.galerie { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.galerie figure { margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--bord); cursor: pointer; background: #000; }
+.galerie img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.galerie figcaption { padding: 0.5em 0.8em; font-family: var(--police-recit); font-style: italic; font-size: 0.95em; }
+.visionneuse { position: absolute; inset: 0; z-index: 60; background: rgba(0, 0, 0, 0.94); display: flex; align-items: center; justify-content: center; cursor: zoom-out; }
+.visionneuse img { max-width: 94%; max-height: 92%; border-radius: 8px; }
+.indice { cursor: pointer; font-family: var(--police-recit); position: relative; }
+.indice .num { position: absolute; top: -9px; right: -9px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #17130a; font-weight: 700; display: grid; place-items: center; font-family: var(--police-ui); font-size: 0.85em; }
+.combat { width: min(1080px, 100%); background: var(--panneau); border: 1px solid var(--danger); border-radius: 14px; padding: 16px 20px; backdrop-filter: blur(10px); }
+.combattant { display: grid; grid-template-columns: 150px 1fr 60px; gap: 0.7em; align-items: center; padding: 0.2em 0; font-size: 0.93em; }
+.combattant.ko { opacity: 0.35; text-decoration: line-through; }
+.combat-journal { font-size: 0.86em; color: var(--texte-doux); max-height: 6.2em; overflow: auto; margin: 0.6em 0; line-height: 1.5; font-family: var(--police-recit); }
+pre.brut { white-space: pre-wrap; word-break: break-word; font-size: 0.8em; background: rgba(0, 0, 0, 0.4); padding: 0.8em; border-radius: 8px; max-height: 320px; overflow: auto; user-select: text; }
+.epilogue { position: absolute; inset: 0; z-index: 45; background: radial-gradient(ellipse at 50% 30%, #1c2340, #05060a 70%); overflow: auto; padding: 8vh 0; animation: apparait 1.2s ease; }
+.epilogue article { width: min(760px, 86vw); margin: 0 auto; font-family: var(--police-recit); font-size: 1.2em; line-height: 1.75; user-select: text; white-space: pre-wrap; }
+.epilogue h1 { text-align: center; color: var(--accent); letter-spacing: 0.3em; margin-bottom: 1.4em; }

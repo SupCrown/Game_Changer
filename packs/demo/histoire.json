@@ -1,0 +1,1581 @@
+{
+  "monde": {
+    "titre": "La Troisième Voix",
+    "monde": {
+      "nom": "Royaume de Sarrance",
+      "description": "Le royaume de Sarrance est un vieux pays de marches et de vallées, tenu depuis trois siècles par l'alliance d'une dynastie et de ses grandes maisons. La magie y porte le nom d'Accord : chaque être a sa note, et tout l'art consiste à l'accorder à celle des choses. Les maisons nobles affirment que les belles notes se transmettent par le sang, et le royaume entier est bâti sur cette certitude. Le roi Aldric IV ne s'est plus montré en public depuis le printemps ; la Chancellerie gouverne en son nom et parle d'une simple fatigue. Pour le reste, les récoltes sont rentrées, les routes sont sûres, et la rentrée d'Astremont a lieu comme chaque automne.",
+      "cadre": "L'Académie royale d'Astremont couronne la colline qui domine Val-d'Astre, la ville aux lanternes. Plus ancienne que la dynastie, elle est régie par sa propre Charte et forme en quatre ans les mages et les officiers du royaume : droit des arcanes, harmoniques, escrime à la lice. Les élèves y vivent par maisons, sous les blasons de leurs familles, et chacun y entre garanti par un répondant. Le héros, pupille de la Couronne, n'a ni maison ni blason : il loge sous les combles de l'Aile Basse et mange à la table du bout.",
+      "regles": [
+        "La magie s'appelle l'Accord : chaque être possède une note qui lui est propre, et lancer un sortilège consiste à accorder sa note à celle d'une chose. Un accord faux se retourne contre le mage : migraine, verre brisé, parfois pire.",
+        "Deux personnes dont les notes s'accordent peuvent accomplir ensemble ce qu'aucune ne pourrait seule : c'est une Résonance. Elle ne se force pas et ne se feint pas ; elle demande de la confiance.",
+        "Les grandes maisons tiennent pour acquis que les notes puissantes se transmettent par le sang. C'est le fondement de leurs privilèges, et le contester en public passe pour une grossièreté, voire pour une faute.",
+        "Astremont est régie par sa Charte de fondation, plus ancienne que la dynastie. Même la Couronne ne peut y arrêter ni en renvoyer quelqu'un hors des cas prévus par le règlement.",
+        "Tout élève entre à l'académie sous la garantie d'un répondant, qui signe au registre et répond de ses frais comme de sa conduite.",
+        "Le duel est interdit hors de la lice et sans maître d'armes. Un élève de première année qui frappe un condisciple est renvoyé le jour même."
+      ],
+      "veriteCachee": "Le roi Aldric IV est mourant et la Chancellerie le cache ; son héritière est une enfant, il faudra donc un régent. Or la Charte de fondation d'Astremont, plus ancienne que la dynastie, confie ce choix au Conclave de l'académie, qui se prononce à trois voix : l'Épée (les maisons), la Robe (les maîtres) et le Commun (les pupilles de la Couronne). Aucun pupille n'ayant été admis depuis soixante ans, la troisième voix dormait, et l'égalité des deux autres remettait la décision au chancelier Evrard de Montreval, qui comptait bien se désigner lui-même. Maîtresse Isaure Vellane, ancienne archiviste de la Couronne, a retrouvé la clause : un seul pupille inscrit porte à lui seul toute la voix du Commun. Elle a saisi une récompense royale banale — la sacoche d'un courrier rapportée à bon port par le héros —, l'a fait convertir en lettre de pupille signée par le roi à une heure de lucidité, et s'est portée répondant sous une cire grise sans armoiries. Le héros n'a donc été admis ni par hasard ni pour un don : il a été choisi parce qu'il ne devait rien à personne, et sa seule présence vaut un tiers du royaume. Le chancelier, qui l'a compris trop tard pour annuler la lettre, a chargé son neveu Gauvain de le faire renvoyer dans les règles avant la mort du roi, tandis que le duc de Hautefeuille ordonnait à sa fille Aliénor de s'attacher le pupille. Deux dossiers peuvent faire tomber le chancelier : le mémoire de Sibylle, qui ruine la doctrine du sang, et les minutes du procès de la générale Tarn, condamnée à sa place pour la chute de la forteresse de Haubrac.",
+      "actes": [
+        {
+          "titre": "Acte I — Le pupille",
+          "resume": "Les premières semaines à Astremont. Le héros apprend les cours, la lice, la table du bout et les règles non écrites ; il se fait ses premiers alliés et ses premiers adversaires. Le mystère ne se montre que par des détails d'intendance : une case cachetée, une sollicitude que personne n'explique."
+        },
+        {
+          "titre": "Acte II — Les trois voix",
+          "resume": "L'hiver. La rumeur de la maladie du roi atteint l'académie, les maisons se comptent, et tout le monde se découvre un intérêt soudain pour le pupille. Le héros comprend ce que vaut sa présence, et que plusieurs de ses amitiés ont commencé par un calcul — y compris celles qui n'en sont plus."
+        },
+        {
+          "titre": "Acte III — Le Conclave",
+          "resume": "Le roi meurt. Le Conclave se réunit dans l'Amphithéâtre des Chartes, et la voix du Commun tient en une seule personne. Selon les liens qu'il a noués, le héros vote, s'abstient ou change la question posée ; le procès Tarn et le mémoire de Sibylle peuvent tout renverser."
+        }
+      ]
+    },
+    "factions": [
+      {
+        "nom": "Maisons d'Épée",
+        "description": "Les grandes familles militaires de Sarrance — Hautefeuille, Montreval et une vingtaine d'autres. Elles tiennent les marches, les tournois et la moitié des places d'Astremont, et leur légitimité repose sur l'idée que les belles notes se transmettent par le sang. Un pupille parmi leurs héritiers est, au mieux, une curiosité.",
+        "reputation": -10
+      },
+      {
+        "nom": "Collège des Robes",
+        "description": "Les maîtres d'Astremont et, au-delà, les mages-juristes qui rédigent, jugent et enseignent. Gardiens de la Charte et jaloux de leur indépendance, ils se divisent sur tout, sauf sur le droit de se diviser. Ils jugeront le pupille sur ses copies.",
+        "reputation": 0
+      },
+      {
+        "nom": "Chancellerie",
+        "description": "L'administration de la Couronne : sceaux, bourses, inspecteurs et courriers. Dirigée par le chancelier Evrard de Montreval, elle gouverne de fait depuis que le roi ne paraît plus. C'est elle qui a délivré, officiellement, la lettre de pupille.",
+        "reputation": 0
+      },
+      {
+        "nom": "Gens du Commun",
+        "description": "Cuisinières, lingères, palefreniers et appariteurs d'Astremont, et derrière eux les artisans et les guildes de Val-d'Astre. Personne ne les regarde ; ils voient tout. Le premier pupille depuis soixante ans est un peu le leur.",
+        "reputation": 10
+      }
+    ],
+    "personnages": [
+      {
+        "nom": "Aliénor",
+        "role": "heroine",
+        "age": 21,
+        "archetype": "La noble hautaine — dont la hauteur est un échafaudage",
+        "description": "Aliénor de Hautefeuille, première année, héritière de la plus ancienne maison d'épée de Sarrance. Première de sa promotion dans tout ce qui se mesure, elle ne doit rien au talent et tout au travail : elle se lève avant l'aube pour répéter ce que d'autres réussissent d'instinct. Sa froideur est une politesse qu'elle applique à tout le monde, à commencer par elle-même.",
+        "apparence": "Femme de vingt et un ans, grande et très droite. Cheveux blond cendré noués en une longue tresse serrée, yeux gris clair, visage fin au menton levé. Uniforme d'Astremont bleu nuit à col haut, impeccablement ajusté, gants de cuir clair, broche d'argent en forme de feuille de chêne. Allure d'escrimeuse, gestes économes.",
+        "personnalite": "Exigeante, précise, orgueilleuse et scrupuleusement juste. Incapable de mentir sur la qualité d'un travail, même pour blesser. Un humour très sec, qu'elle semble regretter aussitôt. La gentillesse la prend au dépourvu ; elle la rembourse comme une dette.",
+        "voix": "Vouvoie tout le monde. Phrases courtes, grammaire irréprochable, litotes tranchantes. Ne hausse jamais le ton. Dit « Naturellement » pour clore un sujet. Quand elle est touchée, elle ajoute une précision technique dont personne n'avait besoin.",
+        "objectifs": [
+          "Remporter le Tournoi des Lames et obtenir un brevet d'officier qui ne doive rien à un mariage",
+          "Sauver la maison Hautefeuille de la ruine sans la vendre",
+          "Ne jamais être prise en défaut devant un Montreval"
+        ],
+        "secrets": [
+          "La maison Hautefeuille est ruinée : c'est elle qui tient, la nuit, les comptes que son père ne veut plus regarder.",
+          "Le duc l'a promise à Gauvain de Montreval en échange du rachat des dettes ; les fiançailles doivent être annoncées au printemps.",
+          "Son père lui a ordonné de s'attacher le pupille « avant l'hiver », sans lui dire pourquoi. Elle obéit, et elle déteste ne pas savoir.",
+          "C'est le témoignage du duc qui a fait condamner la générale Tarn, la mère de Maëlle. Aliénor a lu ce témoignage : il ne tient pas debout."
+        ],
+        "arcTitre": "La dette des Hautefeuille",
+        "arcEtapes": [
+          "Elle fréquente le pupille par devoir, et s'aperçoit qu'il est le seul à ne rien attendre de son nom.",
+          "Le héros découvre les comptes de la maison : elle doit choisir entre l'écarter et lui faire confiance.",
+          "Les fiançailles avec Gauvain sont annoncées ; elle apprend ce que son père comptait obtenir du pupille.",
+          "Elle se range à la volonté du duc ou rompt avec elle, et engage pour la première fois le nom de Hautefeuille en son propre nom."
+        ],
+        "opinion": "Un pupille, dans ma promotion. Il sera jugé sur ce qu'il fait, comme tout le monde ; je doute que ce soit à son avantage.",
+        "paliers": [
+          {
+            "seuil": 25,
+            "nom": "Garde redressée",
+            "description": "Aliénor a corrigé votre posture jusqu'à ce qu'elle tienne toute seule : +1 à vos jets d'agilité à la lice et en combat."
+          },
+          {
+            "seuil": 50,
+            "nom": "Passe croisée",
+            "description": "Technique combinée : vos deux notes s'accordent le temps d'une attaque à deux lames ; l'adversaire visé ne peut en parer qu'une."
+          },
+          {
+            "seuil": 75,
+            "nom": "La parole de Hautefeuille",
+            "description": "Levier politique : Aliénor engage le nom de sa maison en votre faveur. Une fois par chapitre, les Maisons d'Épée doivent vous entendre ou renoncer à une mesure prise contre vous."
+          },
+          {
+            "seuil": 100,
+            "nom": "Serment d'égaux",
+            "description": "Capacité unique : vous combattez et plaidez comme un seul nom. Une fois par chapitre, l'un de vous deux peut reprendre à son compte un jet manqué par l'autre."
+          }
+        ],
+        "rivales": [
+          "Maëlle"
+        ]
+      },
+      {
+        "nom": "Isaure",
+        "role": "heroine",
+        "age": 32,
+        "archetype": "La professeure mystérieuse — qui n'a rien d'éthéré : une juriste distraite, ironique, qui préfère les questions aux réponses",
+        "description": "Isaure Vellane, maîtresse de droit des arcanes et d'histoire du royaume, ancienne archiviste de la Couronne. Elle est la plus jeune titulaire d'une chaire à Astremont, et la moins commode. Elle sait beaucoup de choses sur beaucoup de gens, et préfère poser des questions.",
+        "apparence": "Femme de trente-deux ans, mince, de taille moyenne. Cheveux bruns relevés en un chignon qui se défait et où elle oublie sa craie, yeux noisette très vifs, sourcils expressifs. Robe professorale gris ardoise aux manches retroussées, foulard ocre, doigts tachés d'encre jusqu'au poignet. Toujours un volume sous le bras.",
+        "personnalite": "Ironique, patiente, rigoureuse. Elle croit aux textes plus qu'aux gens, et s'en veut un peu. Distraite pour tout ce qui ne compte pas — les repas, l'heure, sa craie —, d'une attention redoutable pour le reste. Elle protège ses élèves sans jamais le leur dire.",
+        "voix": "Vouvoie. Appelle les élèves par leur numéro de place. Répond volontiers à une question par une autre, cite le règlement de mémoire, loge son humour dans une subordonnée. Jamais d'exclamation.",
+        "objectifs": [
+          "Empêcher que la régence se décide dans le cabinet du chancelier",
+          "Garder le pupille à Astremont, et dans les règles, jusqu'au Conclave",
+          "Faire réhabiliter son ancien maître, l'archiviste Dormel, renvoyé pour avoir trop bien classé"
+        ],
+        "secrets": [
+          "C'est elle qui a retrouvé, dans la Charte de fondation, la clause de la troisième voix.",
+          "Elle a fait signer la lettre de pupille par le roi lui-même, et elle est le répondant anonyme scellé de cire grise dans le registre.",
+          "Elle a choisi le héros précisément parce qu'il ne devait rien à personne ; elle lui ment par omission chaque jour, et cela commence à lui coûter.",
+          "Elle siège au comité qui refuse le mémoire de Sibylle : elle le sait juste, et le juge trop dangereux à publier avant le Conclave."
+        ],
+        "arcTitre": "La clause oubliée",
+        "arcEtapes": [
+          "Elle observe le pupille de loin, comme une pièce qu'on a posée sur l'échiquier et qu'on n'ose plus toucher.",
+          "Le héros remarque qu'elle le protège ; elle doit décider de ce qu'elle peut lui dire sans le mettre en danger.",
+          "La Chancellerie remonte jusqu'à elle : sa chaire, puis sa liberté, sont menacées.",
+          "Elle avoue tout au héros et lui rend le choix qu'elle avait fait à sa place."
+        ],
+        "opinion": "La place quarante-sept. Un élève sans ancêtres à réciter : il sera bien obligé de penser par lui-même. Voyons s'il y prend goût.",
+        "paliers": [
+          {
+            "seuil": 25,
+            "nom": "Notes en marge",
+            "description": "Elle annote vos copies au crayon, sans pitié et sans témoin : +1 à vos jets d'esprit pour le droit, l'histoire et les examens écrits."
+          },
+          {
+            "seuil": 50,
+            "nom": "Contre-accord",
+            "description": "Technique combinée : elle nomme la clause faible d'un enchantement, vous y posez votre note ; ensemble, vous défaites un sortilège qu'aucun de vous ne romprait seul."
+          },
+          {
+            "seuil": 75,
+            "nom": "L'article oublié",
+            "description": "Levier politique : une fois par chapitre, Isaure exhume de la Charte un article qui suspend une décision prise contre vous par l'académie ou par la Chancellerie."
+          },
+          {
+            "seuil": 100,
+            "nom": "Voix au chapitre",
+            "description": "Capacité unique : vous obtenez le droit de parler devant le conseil des maîtres, et l'on ne peut plus décider de votre sort hors de votre présence."
+          }
+        ],
+        "rivales": [
+          "Sibylle"
+        ]
+      },
+      {
+        "nom": "Maëlle",
+        "role": "heroine",
+        "age": 22,
+        "archetype": "La paria — qui refuse obstinément de jouer la victime",
+        "description": "Maëlle Tarn, quatrième année, fille de la générale Tarn, dont la maison a été rayée de l'armorial pour trahison. Une vieille disposition de la Charte lui garde sa place ; pour payer sa pension, elle travaille aux cuisines et à la lingerie. On l'appelle « la Rayée », et elle a décidé de trouver cela drôle.",
+        "apparence": "Femme de vingt-deux ans, solide, de taille moyenne. Cheveux roux, courts et bouclés, retenus par un foulard ; yeux verts, taches de rousseur, sourire en coin. Uniforme d'Astremont usé aux coudes, manches retroussées, tablier de toile écrue, bottines ressemelées. Mains de travailleuse, démarche vive.",
+        "personnalite": "Gouailleuse, généreuse, têtue. Elle donne avant qu'on demande et se méfie de ceux qui remercient trop. Sa bonne humeur est un choix quotidien, pas un tempérament. Elle ne pardonne pas l'injustice et n'oublie pas un service.",
+        "voix": "Tutoie d'emblée. Parle la bouche pleine, distribue des surnoms, coupe la parole. Phrases brèves, images de cuisine. Quand un sujet la touche, elle le dit vite et passe à autre chose.",
+        "objectifs": [
+          "Retrouver les minutes du procès de sa mère",
+          "Obtenir son brevet de mage de bataille malgré l'interdiction faite aux maisons rayées",
+          "Que personne, à la table du bout, ne mange seul"
+        ],
+        "secrets": [
+          "Elle fouille les archives de l'académie la nuit, avec les clefs de la lingerie.",
+          "Sa mère vit encore, recluse dans une place forte du nord ; Maëlle lui écrit sous un faux nom.",
+          "Elle soupçonne les Hautefeuille d'avoir menti au procès, et n'a jamais osé le dire en face à Aliénor."
+        ],
+        "arcTitre": "Le nom rayé",
+        "arcEtapes": [
+          "Elle adopte le pupille à la table du bout, sans rien demander en échange.",
+          "Le héros la surprend aux archives ; elle lui confie ce qu'elle cherche.",
+          "Les minutes du procès reparaissent : elles accusent le chancelier et compromettent le duc de Hautefeuille.",
+          "Elle doit choisir entre la vengeance et la vérité publique — et accepter, ou non, l'aide d'Aliénor."
+        ],
+        "opinion": "Un pupille. Le pauvre : ils vont le manger tout cru. Il lui faut une table.",
+        "paliers": [
+          {
+            "seuil": 25,
+            "nom": "La table du bout",
+            "description": "Les cuisines vous ont adopté : vous récupérez mieux après un repas, et +1 à vos jets de perception pour saisir ce qui se dit chez les gens de service."
+          },
+          {
+            "seuil": 50,
+            "nom": "Feu de fourneau",
+            "description": "Technique combinée : la flamme courte de Maëlle, portée par votre note, devient un rideau de chaleur qui couvre une retraite ou force un passage."
+          },
+          {
+            "seuil": 75,
+            "nom": "Ceux qu'on ne regarde pas",
+            "description": "Levier politique : lingères, palefreniers et appariteurs portent vos messages. Une fois par chapitre, les Gens du Commun vous fournissent un accès ou un témoin."
+          },
+          {
+            "seuil": 100,
+            "nom": "Rayée de rien",
+            "description": "Capacité unique : ce qu'on vous retire — un titre, une place, un droit — ne vous affaiblit plus. Une fois par chapitre, ignorez les effets d'une sanction ou d'un état défavorable."
+          }
+        ],
+        "rivales": [
+          "Aliénor"
+        ]
+      },
+      {
+        "nom": "Sibylle",
+        "role": "heroine",
+        "age": 20,
+        "archetype": "La génie incomprise — incomprise surtout parce qu'elle ne finit pas ses phrases",
+        "description": "Sibylle Orfraie, deuxième année, fille d'un facteur d'orgues anobli de fraîche date. Première en harmoniques depuis son arrivée, elle sert de répétitrice à la Tour ; dernière en droit, elle redouble le cours de maîtresse Vellane. Elle défend une théorie que personne ne veut lire : la note d'un mage ne viendrait pas du sang, mais de l'accord entre les personnes.",
+        "apparence": "Femme de vingt ans, petite et vive. Cheveux noirs en chignon approximatif où est planté un diapason, grandes lunettes rondes toujours de travers, yeux brun doré. Uniforme d'Astremont boutonné de travers sous une blouse d'atelier grise tachée de craie, poches pleines de diapasons et de bouts de ficelle.",
+        "personnalite": "Enthousiaste, distraite, sincère jusqu'à la gaffe. Elle s'intéresse aux gens comme à des phénomènes, puis s'excuse de l'avoir dit. Tenace devant un problème, désarmée devant un sous-entendu. Sa colère est brève et sa joie contagieuse.",
+        "voix": "Tutoie. Parle vite, par parenthèses, commence par « Techniquement » et s'interrompt elle-même. Donne des chiffres. Oublie de finir, puis finit trois phrases plus tard.",
+        "objectifs": [
+          "Faire lire son mémoire sur l'accord par le Collège des Robes",
+          "Mesurer la note de quelqu'un qui n'appartient à aucune lignée",
+          "Réussir enfin le cours de droit"
+        ],
+        "secrets": [
+          "Ses recherches sont payées par une bourse discrète de la Chancellerie ; elle croit à un mécénat et ignore qu'on compte s'en servir contre les maisons d'épée.",
+          "Elle a déjà obtenu une Résonance en laboratoire, une seule fois, sans jamais parvenir à la reproduire.",
+          "Elle craint de n'être tolérée à Astremont que pour ses notes, et de n'avoir aucun ami qui ne soit aussi un sujet d'étude."
+        ],
+        "arcTitre": "Cent quarante pages",
+        "arcEtapes": [
+          "Elle trouve dans le pupille un cas qui n'entre dans aucune de ses tables, et quelqu'un qui l'écoute.",
+          "Ses mesures sur le héros confirment sa théorie ; elle découvre qui finance vraiment sa bourse.",
+          "Le chancelier réclame le mémoire, maîtresse Vellane veut l'enterrer : Sibylle est sommée de choisir un camp.",
+          "Elle publie, se tait ou réécrit en quarante pages, et apprend ce que vaut une preuve quand elle a un prix politique."
+        ],
+        "opinion": "Place quarante-sept. Aucune lignée, donc aucune table de référence. Il faudrait le mesurer. Poliment.",
+        "paliers": [
+          {
+            "seuil": 25,
+            "nom": "Diapason de poche",
+            "description": "Elle a taillé un diapason à votre note : +1 à vos jets d'esprit pour poser un accord, et vos ratés font moins de dégâts."
+          },
+          {
+            "seuil": 50,
+            "nom": "Harmonique forcée",
+            "description": "Technique combinée : Sibylle calcule, vous tenez la note ; un accord simple porte deux fois plus loin, au prix d'une vraie fatigue."
+          },
+          {
+            "seuil": 75,
+            "nom": "Le mémoire",
+            "description": "Levier politique : vous savez ce que contiennent les cent quarante pages. Une fois par chapitre, la seule perspective de les voir publiées fait reculer le Collège des Robes ou une maison d'épée."
+          },
+          {
+            "seuil": 100,
+            "nom": "Accord parfait",
+            "description": "Capacité unique : le temps d'une scène, vos deux notes n'en font qu'une ; tout jet lié à la magie est lancé deux fois, et vous gardez le meilleur."
+          }
+        ],
+        "rivales": [
+          "Isaure"
+        ]
+      },
+      {
+        "nom": "Gauvain",
+        "role": "majeur",
+        "age": 22,
+        "archetype": "Le rival charmant — cruel avec le sourire, et qui préférerait être aimé",
+        "description": "Gauvain de Montreval, première année, neveu du chancelier Evrard de Montreval. Beau joueur, bon escrimeur, drôle quand il le veut, il a compris très tôt qu'on pardonne tout à qui sait sourire. Il n'a rien contre le pupille, et c'est bien ce qui le rend dangereux.",
+        "apparence": "Homme de vingt-deux ans, élancé. Cheveux châtain clair coiffés avec soin, yeux bleus, sourire facile. Uniforme d'Astremont coupé sur mesure, chevalière au sanglier d'argent, gants toujours propres. Élégance nonchalante.",
+        "personnalite": "Charmeur, calculateur, paresseux par endroits. Cruel avec politesse. Il craint son oncle plus qu'il ne l'admire, et s'ennuie de sa propre facilité.",
+        "voix": "Vouvoie avec une cordialité appuyée. Compliments à double fond, « mon ami », questions qui n'en sont pas. Rit un peu trop fort quand il perd.",
+        "objectifs": [
+          "Faire renvoyer le pupille dans les règles avant l'hiver, comme son oncle l'exige",
+          "Épouser Aliénor de Hautefeuille, et s'en faire estimer si possible",
+          "Ne jamais avoir l'air de faire un effort"
+        ],
+        "secrets": [
+          "Son oncle lui a ordonné de pousser le pupille à la faute : un élève de première année qui frappe un condisciple est renvoyé le jour même.",
+          "Il ignore pourquoi ce pupille compte tant, et commence à se le demander.",
+          "Il admire sincèrement Aliénor, qui le méprise."
+        ],
+        "arcTitre": "Le neveu",
+        "arcEtapes": [
+          "Il provoque le pupille avec le sourire.",
+          "Ses échecs agacent le chancelier ; il passe des moqueries aux manœuvres.",
+          "Il découvre ce que son oncle prépare, et doit décider s'il en est."
+        ],
+        "opinion": "Charmante nouveauté, ce pupille. Rien de personnel : il n'est pas à sa place, et quelqu'un devra bien le lui faire comprendre. Aimablement.",
+        "paliers": [],
+        "rivales": []
+      },
+      {
+        "nom": "Brunehaut",
+        "role": "majeur",
+        "age": 44,
+        "archetype": "La maîtresse d'armes bourrue — la seule personne d'Astremont que les blasons n'impressionnent pas",
+        "description": "Dame Brunehaut Kerval, maîtresse d'armes, ancienne capitaine des marches du nord, dont elle ne raconte rien. Elle juge un élève à ses pieds, et n'a encore renvoyé personne qui continuait d'essayer.",
+        "apparence": "Femme de quarante-quatre ans, large d'épaules. Cheveux gris fer coupés court, yeux bruns, une cicatrice en travers du sourcil gauche. Pourpoint de cuir matelassé, bottes de cavalerie, sifflet au cou, une lame de frêne sous le bras.",
+        "personnalite": "Rude, équitable, avare de compliments. Un humour de caserne. Elle se méfie de la politique et défend sa lice comme un territoire neutre.",
+        "voix": "Ordres brefs. Appelle les élèves par leur nom de maison, et le héros « le pupille ». Compliments rationnés : « mieux » est son superlatif.",
+        "objectifs": [
+          "Faire de chaque promotion des gens capables de survivre à leur première bataille",
+          "Tenir la politique hors de la lice"
+        ],
+        "secrets": [
+          "Elle a servi sous la générale Tarn ; elle était à Haubrac le jour où la forteresse est tombée et sait que la générale n'a pas trahi. On lui a fait comprendre qu'il valait mieux se taire.",
+          "Elle veille sur Maëlle depuis quatre ans, sans jamais le montrer."
+        ],
+        "arcTitre": "Le silence de Haubrac",
+        "arcEtapes": [
+          "Elle traite le pupille comme les autres, ce qui est déjà une faveur.",
+          "Elle s'aperçoit qu'on cherche à le faire renvoyer et durcit les règles de la lice pour tout le monde.",
+          "On lui demande de témoigner sur Haubrac : il lui faut rompre un silence de dix ans."
+        ],
+        "opinion": "Un pupille. Des mains qui ont travaillé, des pieds qui ne savent rien. Ça s'apprend.",
+        "paliers": [],
+        "rivales": []
+      },
+      {
+        "nom": "Odilon",
+        "role": "secondaire",
+        "age": 19,
+        "archetype": "Le camarade de chambre — petit noble sans le sou, bon comme le pain",
+        "description": "Odilon de Vaire, première année, cinquième enfant d'un baron dont le château a « plus de courants d'air que de murs ». Gourmand, bavard, maladroit à la lice et d'une loyauté immédiate, il partage la chambre onze avec le héros.",
+        "apparence": "Homme de dix-neuf ans, rond et de bonne taille. Joues roses, cheveux blonds en épis, yeux bleus étonnés. Uniforme d'Astremont visiblement hérité d'un aîné, un peu juste aux épaules, bas reprisés. Sourire franc.",
+        "personnalite": "Chaleureux, anxieux, drôle sans le vouloir. Il s'excuse auprès des meubles. Il a peur de tout, et y va quand même.",
+        "voix": "Tutoie. Phrases qui s'allongent, comparaisons alimentaires, confidences sur sa famille. Cite sa mère.",
+        "objectifs": [
+          "Ne pas être renvoyé avant la Fête des Lanternes",
+          "Se faire un ami, comme sa mère l'espère sans trop y croire"
+        ],
+        "secrets": [
+          "Il doit sa place à la recommandation d'un cousin qu'il n'a jamais vu, et craint qu'on s'aperçoive de l'erreur.",
+          "Il écrit des vers. Ils sont mauvais ; il le sait."
+        ],
+        "arcTitre": "Le cadet de Vaire",
+        "arcEtapes": [
+          "Il s'accroche au héros comme à une bouée.",
+          "Il découvre qu'il est capable de courage quand c'est pour quelqu'un d'autre."
+        ],
+        "opinion": "Mon camarade de chambre est le pupille ! Au moins, lui ne me demandera pas combien de tours a mon château.",
+        "paliers": [],
+        "rivales": []
+      },
+      {
+        "nom": "Anselme",
+        "role": "secondaire",
+        "age": 63,
+        "archetype": "L'intendant — un roturier qui tient depuis quarante ans les registres des nobles",
+        "description": "Maître Anselme Corbin, intendant d'Astremont. Il compte les chandelles, les draps et les écus avec la même sévérité, et connaît le prix de tout ce que les élèves cassent. Derrière ses lamentations sur le cours du suif, c'est un homme qui sait se taire.",
+        "apparence": "Homme de soixante-trois ans, maigre et un peu voûté. Calotte noire, lunettes cerclées de fer, favoris gris. Habit brun aux manchettes de lustrine, doigts tachés d'encre, un trousseau de clefs à la ceinture.",
+        "personnalite": "Tatillon, grognon, scrupuleusement honnête. Il a plus de tendresse qu'il n'en inscrit dans ses colonnes.",
+        "voix": "Vouvoie. Se plaint des prix, donne des chiffres au sou près, appelle les élèves par leur numéro de chambre.",
+        "objectifs": [
+          "Boucler les comptes du trimestre",
+          "Que le premier pupille de sa carrière ne manque de rien, dans la limite du règlement"
+        ],
+        "secrets": [
+          "Il sait qui s'est porté répondant du pupille : on lui a remis la bande cachetée déjà posée, avec ordre de ne laisser personne la soulever.",
+          "Il prélève sur ses propres chandelles de quoi éclairer un peu mieux la chambre onze."
+        ],
+        "arcTitre": "",
+        "arcEtapes": [],
+        "opinion": "Soixante ans que la colonne des pupilles était vide. Celui-ci a l'air d'avoir marché longtemps.",
+        "paliers": [],
+        "rivales": []
+      },
+      {
+        "nom": "Guillemette",
+        "role": "secondaire",
+        "age": 55,
+        "archetype": "La cheffe des cuisines — une voix de tonnerre et un faible pour les affamés",
+        "description": "Guillemette, maîtresse des cuisines d'Astremont, règne sur le Grand Réfectoire une louche à la main. Elle houspille tout le monde, nobles compris, et nourrit mieux ceux qu'elle houspille le plus.",
+        "apparence": "Femme de cinquante-cinq ans, forte, aux bras puissants. Cheveux gris sous une coiffe blanche, joues rouges, yeux noirs. Robe de laine brune, grand tablier blanc, manches roulées, une louche jamais loin.",
+        "personnalite": "Tonitruante, maternelle sans l'admettre, rancunière envers quiconque gaspille le pain.",
+        "voix": "Tutoie tout le monde. Crie par habitude, appelle les élèves « mon grand » ou « ma belle », jure par ses marmites.",
+        "objectifs": [
+          "Que personne ne quitte sa salle le ventre vide",
+          "Garder Maëlle à l'abri des ennuis"
+        ],
+        "secrets": [
+          "Elle sait très bien que Maëlle monte sur le toit, et lui laisse exprès les pâtisseries « ratées ».",
+          "Elle a servi autrefois dans la maison Tarn."
+        ],
+        "arcTitre": "",
+        "arcEtapes": [],
+        "opinion": "Maigre comme un clou de girofle, celui-là. On va lui remplir l'écuelle.",
+        "paliers": [],
+        "rivales": []
+      }
+    ],
+    "lieux": [
+      {
+        "nom": "Cour d'Honneur",
+        "description": "La grande cour pavée d'Astremont, au pied de l'escalier d'honneur. Les carrosses y entrent par trois le jour de la rentrée ; on y dresse la table du registre.",
+        "type": "cour"
+      },
+      {
+        "nom": "Amphithéâtre des Chartes",
+        "description": "Des gradins de chêne où l'on s'assoit par maisons, un tableau noir haut comme un mur, une odeur de cire et de craie. Maîtresse Vellane y enseigne le droit des arcanes.",
+        "type": "salle"
+      },
+      {
+        "nom": "Grand Réfectoire",
+        "description": "Une nef voûtée tendue de bannières, une table par maison. Tout au bout, contre la porte des cuisines, la table sans bannière qu'on appelle la table du bout.",
+        "type": "refectoire"
+      },
+      {
+        "nom": "Lice du Connétable",
+        "description": "Un rectangle de sable ceint d'une barrière, un râtelier de lames de frêne, des poteaux coiffés de vieux casques. Dame Brunehaut y règne au sifflet.",
+        "type": "arene"
+      },
+      {
+        "nom": "Dortoir de l'Aile Basse",
+        "description": "Les chambres les moins chères d'Astremont, sous les combles. La chambre onze a deux lits, une lucarne, une porte qui accroche et une pente de toit faite pour qu'on s'y cogne.",
+        "type": "dortoir"
+      },
+      {
+        "nom": "Bibliothèque du Chapitre",
+        "description": "Des rayonnages jusqu'aux galeries de bois, des pupitres à chaînes, l'unique exemplaire du Coutumier d'Astremont. La nourriture y est interdite à moins de dix pas des chartes.",
+        "type": "bibliotheque"
+      },
+      {
+        "nom": "Tour des Harmoniques",
+        "description": "Une salle ronde tout en fenêtres, au sommet d'un long escalier à vis. On y apprend l'Accord sur des cloches de verre, sous l'autorité somnolente de maître Aubin et celle, très éveillée, de sa répétitrice.",
+        "type": "tour"
+      },
+      {
+        "nom": "Intendance",
+        "description": "Une pièce basse où tout est étiqueté, compté, pesé : casiers, chandelles par douzaines, balance à monnaie. Maître Anselme y garde le grand registre des promotions.",
+        "type": "bureau"
+      },
+      {
+        "nom": "Galerie des Blasons",
+        "description": "Un long passage dont les murs portent, du sol à la voûte, l'écu peint de chaque maison ayant donné un élève à Astremont. On la traverse pour gagner l'Aile Basse.",
+        "type": "couloir"
+      },
+      {
+        "nom": "Toit des Cuisines",
+        "description": "Un toit plat, tiédi par les fours, auquel on accède par une échelle de l'arrière-cuisine. On y voit les tours de l'académie et toutes les lanternes de Val-d'Astre.",
+        "type": "toit"
+      }
+    ],
+    "heros": {
+      "apparence": "Un jeune homme aux épaules de porteur et aux mains calleuses. L'uniforme d'Astremont qu'on lui a remis est neuf, et cela se voit plus que tout le reste ; ses souliers, eux, ont été ressemelés plusieurs fois.",
+      "capacite": {
+        "nom": "Oreille juste",
+        "description": "Vous entendez quand quelque chose sonne faux : un accord mal posé, une lame mal équilibrée, un instrument désaccordé. Une fois par scène, cela peut vous aider à repérer la faille d'un sortilège ou d'un geste."
+      },
+      "objets": [
+        {
+          "nom": "Lettre de pupille",
+          "description": "Un pli au sceau royal qui vous accorde une place à Astremont « aux frais et sous la garde de la Couronne ». Votre seul titre."
+        },
+        {
+          "nom": "Couteau de poche",
+          "description": "Lame courte, manche de corne usé. Coupe le pain et la ficelle, rien de plus glorieux."
+        },
+        {
+          "nom": "Sac de toile",
+          "description": "Tout ce que vous possédez y tient, et il reste de la place."
+        }
+      ],
+      "or": 2
+    },
+    "ouverture": "C'est le matin de la rentrée. Vous arrivez à pied dans la Cour d'Honneur d'Astremont, au milieu des carrosses armoriés, avec pour tout bagage un sac de toile et la lettre de pupille reçue un mois plus tôt, en remerciement d'une sacoche royale rapportée à bon port. Il faut s'inscrire au registre, trouver sa chambre et ne pas arriver en retard au premier cours.",
+    "objectifInitial": "Tenir jusqu'aux examens du trimestre sans être renvoyé d'Astremont."
+  },
+  "scenes": [
+    {
+      "prose": "[[LIEU: Cour d'Honneur]]\n\nLes carrosses entrent par trois dans la Cour d'Honneur, et chacun porte ses armoiries comme un visage. Des valets en livrée déchargent des malles cerclées de cuivre, des étuis à lames, une harpe, un faucon encapuchonné qui proteste. Vous êtes arrivé à pied par la côte de Val-d'Astre, dans la brume du matin, votre sac de toile sur l'épaule ; depuis la grille, personne ne vous a encore demandé de porter quelque chose. C'est presque un bon début.\n\nAu pied du grand escalier, une table disparaît sous un registre large comme une porte. Le vieil homme assis derrière lève vers vous des lunettes cerclées de fer.\n\nAnselme (neutre) : « Maison ? »\n\nIl attend, la plume en l'air. Puis son regard tombe sur le pli au sceau royal qui dépasse de votre poche, et ses épaules se détendent.\n\nAnselme (sourire) : « Ah. Le pupille de la Couronne. Soixante ans que cette colonne du registre reste vide, et il faut que ça tombe l'année où l'on me rogne le budget des chandelles. Aile Basse, chambre onze. La clef accroche : soulevez la porte en tournant. »\n\nDerrière vous, une voix nette, sans un pli.\n\nAliénor (neutre) : « Vous bloquez le registre. Certains d'entre nous ont une maison à déclarer. »\n\nElle est grande, blonde, droite comme une lame au fourreau, et elle regarde un point situé légèrement au-dessus de votre tête. Un garçon rond, chargé d'une malle qu'il porte lui-même, s'arrête à votre hauteur, hors d'haleine.\n\nOdilon (sourire) : « Chambre onze ? Moi aussi ! Odilon de Vaire. Ne cherche pas sur la carte, c'est un château avec plus de courants d'air que de murs. Tu sais où se trouve l'Amphithéâtre des Chartes ? Moi non plus. »\n\nLa première cloche sonne. Anselme vous tend la plume pour signer ; Aliénor patiente, ostensiblement ; Odilon, lui, vous tend la main.",
+      "rapport": {
+        "resume": "Le héros arrive à pied à l'Académie royale d'Astremont, au milieu des carrosses armoriés. L'intendant Anselme l'inscrit comme pupille de la Couronne et lui attribue la chambre onze de l'Aile Basse ; Aliénor de Hautefeuille s'impatiente derrière lui, tandis qu'Odilon de Vaire, son camarade de chambre, se présente chaleureusement.",
+        "lieu": "Cour d'Honneur",
+        "typeLieu": "cour",
+        "presents": [
+          "Anselme",
+          "Aliénor",
+          "Odilon"
+        ],
+        "changements": [
+          {
+            "type": "objet",
+            "cible": "Clef de la chambre onze",
+            "delta": 1,
+            "motif": "Remise par maître Anselme à l'inscription. Elle accroche : il faut soulever la porte en tournant."
+          }
+        ],
+        "journal": [
+          {
+            "type": "objectif",
+            "texte": "Trouver l'Amphithéâtre des Chartes avant la seconde cloche."
+          }
+        ],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Le héros loge au Dortoir de l'Aile Basse, chambre onze, avec Odilon de Vaire.",
+          "Aucun pupille de la Couronne n'avait été inscrit à Astremont depuis soixante ans."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Anselme",
+            "texte": "J'ai inscrit le premier pupille de toute ma carrière. Il avait un sac de toile et l'air d'avoir marché longtemps."
+          },
+          {
+            "personnage": "Aliénor",
+            "texte": "Le pupille dont tout le monde parle se tenait devant le registre, un sac de toile pour tout bagage. Il bloquait le passage."
+          },
+          {
+            "personnage": "Odilon",
+            "texte": "Mon camarade de chambre est le pupille ! Je lui ai tendu la main avant même de savoir son nom."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [
+          {
+            "categorie": "monde",
+            "titre": "Pupille de la Couronne",
+            "texte": "Élève admis à Astremont sans maison ni répondant connu, « aux frais et sous la garde de la Couronne ». Le statut est prévu par la Charte de fondation, mais il n'avait plus été accordé depuis soixante ans."
+          }
+        ],
+        "pistes": [
+          "Signer le registre et remercier Anselme",
+          "Serrer la main d'Odilon",
+          "Céder le passage à Aliénor"
+        ],
+        "finCreneau": false,
+        "indiceRevele": false,
+        "humeur": "calme",
+        "effet": "aucun",
+        "meteo": "brume",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Amphithéâtre des Chartes]]\n\nL'Amphithéâtre des Chartes sent la cire, la craie et le vieux parchemin. Les gradins se remplissent par maisons, comme une carte du royaume qu'on aurait pliée en éventail ; il reste une place au quatrième rang, contre l'allée, et c'est là que le flot vous dépose. Odilon s'effondre à côté de vous et entreprend de tailler une plume qui n'avait rien demandé.\n\nLa professeure arrive en retard, une pile de volumes sous le bras, de l'encre jusqu'au poignet. Elle pose le tout, cherche sa craie partout, la trouve dans son chignon.\n\nIsaure (neutre) : « Droit des arcanes et histoire du royaume. Maîtresse Vellane. Je ne retiens aucun nom avant la Fête des Lanternes : d'ici là, vous êtes des numéros de place. Ne vous vexez pas, la moitié d'entre vous aura changé d'avis avant. »\n\nQuelques rires prudents. Elle écrit au tableau, d'une main penchée, la question du jour : pourquoi prête-t-on serment avant d'apprendre son premier accord ?\n\nGauvain (sourire) : « Parce qu'un pouvoir sans loyauté est un danger, maîtresse. Nos pères le savaient. »\n\nIsaure (neutre) : « Place douze. C'est joli, et c'est creux. Vos pères savaient surtout rédiger. Quelqu'un d'autre ? »\n\nTout en haut, une étudiante aux lunettes de travers lève la main et parle en même temps.\n\nSibylle (surprise) : « Techniquement, le serment déplace la note du mage, d'un quart de ton à peu près, je l'ai mesuré, enfin, sur moi, donc l'échantillon est discutable, mais… »\n\nIsaure (sourire) : « Place soixante et onze, que je retrouve avec plaisir pour la seconde année, répond à une question que je poserai en troisième. Gardez-la au chaud. »\n\nLa craie descend le long des rangs, hésite, s'arrête sur vous. Trente têtes se tournent ; Gauvain, lui, sourit d'avance.\n\nIsaure (neutre) : « Place quarante-sept. Vous n'avez pas d'ancêtres à citer, ce sera reposant. Pourquoi le serment, selon vous ? »",
+      "rapport": {
+        "resume": "Premier cours de droit des arcanes dans l'Amphithéâtre des Chartes. Maîtresse Isaure Vellane, qui appelle ses élèves par leur numéro de place, rabroue la réponse convenue de Gauvain et remet à plus tard celle de Sibylle. Puis elle interroge le héros, place quarante-sept, devant toute la promotion.",
+        "lieu": "Amphithéâtre des Chartes",
+        "typeLieu": "salle",
+        "presents": [
+          "Isaure",
+          "Gauvain",
+          "Sibylle",
+          "Odilon"
+        ],
+        "changements": [],
+        "journal": [],
+        "objectifsAccomplis": [
+          "Trouver l'Amphithéâtre des Chartes avant la seconde cloche."
+        ],
+        "faits": [
+          "Maîtresse Isaure Vellane appelle ses élèves par leur numéro de place ; le héros occupe la place quarante-sept.",
+          "Sibylle Orfraie, deuxième année, redouble le cours de droit des arcanes."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Isaure",
+            "texte": "J'ai interrogé la place quarante-sept dès le premier cours. Autant savoir tout de suite comment il réfléchit quand trente personnes le regardent."
+          },
+          {
+            "personnage": "Gauvain",
+            "texte": "Vellane m'a repris devant tout le monde, puis elle a donné la parole au pupille. Elle s'amuse."
+          },
+          {
+            "personnage": "Sibylle",
+            "texte": "Personne n'a écouté ma mesure du quart de ton. La place quarante-sept, au moins, n'a pas ri."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Répondre avec ses propres mots",
+          "Avouer ne pas savoir",
+          "Retourner la question à la professeure"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "calme",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Grand Réfectoire]]\n\nLe Grand Réfectoire est une nef : des voûtes, des bannières, et sous chaque bannière une table où l'on s'assoit par maison, comme on naît, sans y penser. Sur votre plateau, une soupe épaisse, du pain, une part de tourte encore fumante. Le compte des tables est vite fait : il y en a une pour les Hautefeuille, une pour les Montreval, une pour des gens dont le blason est un poisson. Il n'y en a pas pour vous.\n\nGuillemette (colere) : « On ne campe pas devant ma louche ! Avance, mon grand, tu refroidis la soupe des autres ! »\n\nTout au fond, contre la porte des cuisines, une petite table sans bannière. Une rousse en tablier y déjeune, les pieds sur le banc d'en face. Elle vous a repéré bien avant que vous ne la voyiez ; elle ôte ses pieds et tapote le bois.\n\nMaëlle (sourire) : « Par ici, le pupille ! La table du bout. La seule où personne ne te demandera le nom de ton arrière-grand-père. Moi, c'est Maëlle. Les autres disent la Rayée ; tu verras, ça se prononce très bien la bouche pleine. »\n\nOdilon arrive derrière vous et contemple son plateau avec une émotion sincère.\n\nOdilon (surprise) : « De la tourte. Un jour ordinaire. Chez moi, la tourte, c'est pour les enterrements. Je peux m'asseoir ? Ma maison n'a pas de table non plus, elle tiendrait dans un tiroir. »\n\nMaëlle (sourire) : « Assieds-toi, le tiroir. Et mangez léger : cet après-midi, c'est la lice. On dit que Dame Brunehaut fait courir les premières années jusqu'à ce que quelqu'un rende son déjeuner. »\n\nOdilon repose sa fourchette, très lentement.\n\nMaëlle rompt son pain, en pousse la moitié vers vous et vous dévisage sans gêne, le menton dans la main.\n\nMaëlle (neutre) : « Bon. Et toi, tu sors d'où ? »",
+      "rapport": {
+        "resume": "Au Grand Réfectoire, où l'on s'assoit par maisons, le héros n'a pas de table. Maëlle, surnommée « la Rayée », l'invite à la table du bout, près des cuisines, où Odilon les rejoint. Elle partage son pain et lui demande d'où il vient.",
+        "lieu": "Grand Réfectoire",
+        "typeLieu": "refectoire",
+        "presents": [
+          "Maëlle",
+          "Odilon",
+          "Guillemette"
+        ],
+        "changements": [
+          {
+            "type": "resonance",
+            "cible": "Maëlle",
+            "delta": 2,
+            "motif": "Elle a invité le héros à la table du bout et partagé son pain avec lui."
+          }
+        ],
+        "journal": [
+          {
+            "type": "rumeur",
+            "texte": "On dit que Dame Brunehaut fait courir les premières années jusqu'à ce que quelqu'un rende son déjeuner."
+          }
+        ],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Maëlle, surnommée « la Rayée », mange à la table du bout du Grand Réfectoire, la seule qui n'ait pas de bannière."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Maëlle",
+            "texte": "J'ai appelé le pupille à la table du bout avant qu'il reste planté là avec son plateau. Il avait besoin d'une table ; j'en avais une."
+          },
+          {
+            "personnage": "Odilon",
+            "texte": "On a mangé à la table du bout, avec Maëlle et le pupille. Il y avait de la tourte. C'est le meilleur repas de ma vie, jusqu'à ce qu'elle parle de la lice."
+          },
+          {
+            "personnage": "Guillemette",
+            "texte": "Le pupille est resté en travers de ma louche, perdu comme un veau à la foire. Maëlle l'a ramassé. Brave petite."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Raconter d'où l'on vient",
+          "Demander pourquoi on l'appelle la Rayée",
+          "Remercier pour le pain et attaquer la tourte"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "joyeux",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Lice du Connétable]]\n\nLe sable de la Lice du Connétable a bu la sueur de soixante promotions, et il attend la vôtre sans impatience. Dame Brunehaut longe le rang, une lame de frêne sous le bras, et vous jauge l'un après l'autre comme on choisit un cheval qu'on n'a pas les moyens de refuser.\n\nBrunehaut (neutre) : « Ici, vos blasons ne parent rien. Une lame d'exercice fait le même bleu au fils d'un duc qu'à n'importe qui. Par deux. Vaire avec Montreval. Hautefeuille… avec le pupille. »\n\nUn murmure court le long du rang. Aliénor ne discute pas ; elle salue, exactement comme dans le manuel, et se met en garde. La vôtre vous a été montrée il y a quatre minutes.\n\nAliénor (neutre) : « Votre coude. Non, l'autre. Peu importe. »\n\nSa lame part. Le premier coup claque sur votre frêne et vous remonte jusque dans l'épaule ; le deuxième écarte votre garde comme on pousse un rideau ; le troisième s'arrête à un doigt de votre gorge, immobile, poli.\n\nAliénor (neutre) : « Vous tenez cela comme une fourche. »\n\nBrunehaut (colere) : « Hautefeuille ! Je vous ai demandé de l'exercer, pas de le commenter. Reprenez. Et vous, le pupille, cessez de fixer sa lame. Regardez ses pieds : une lame ment, des pieds jamais. »\n\nÀ l'autre bout du sable, Odilon pousse un cri bref et s'assoit. Gauvain s'excuse auprès de lui avec un sourire charmant.\n\nAliénor reprend sa garde. Cette fois, vous le voyez : son pied arrière pivote, à peine, un grain de sable qui roule — et déjà le frêne arrive, en biais, vers vos côtes.\n\n[[JET: D20 | agilite | 12 | esquiver la lame d'entraînement]]",
+      "rapport": {
+        "resume": "Première séance à la Lice du Connétable. Dame Brunehaut oppose le héros à Aliénor de Hautefeuille, qui le domine en trois coups et compare sa garde à une fourche. Brunehaut ordonne de reprendre, et une nouvelle attaque part vers les côtes du héros.",
+        "lieu": "Lice du Connétable",
+        "typeLieu": "arene",
+        "presents": [
+          "Brunehaut",
+          "Aliénor",
+          "Odilon",
+          "Gauvain"
+        ],
+        "changements": [],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [
+          "À la lice, Dame Brunehaut a donné Aliénor de Hautefeuille pour partenaire au héros, et Gauvain de Montreval à Odilon."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Aliénor",
+            "texte": "On m'a donné le pupille pour partenaire. Il tient sa lame comme une fourche, et il ne l'a pas lâchée."
+          },
+          {
+            "personnage": "Brunehaut",
+            "texte": "J'ai mis le pupille face à Hautefeuille pour voir ce qu'il fait quand il n'a aucune chance. C'est là qu'on apprend quelque chose sur quelqu'un."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Esquiver d'un pas de côté",
+          "Parer en reculant",
+          "Encaisser sans lâcher la lame"
+        ],
+        "finCreneau": false,
+        "indiceRevele": false,
+        "humeur": "tendu",
+        "effet": "tremblement",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "Le sifflet de Dame Brunehaut coupe l'air avant même que la poussière soit retombée.\n\nBrunehaut (neutre) : « Halte. Bon. Ça, au moins, c'était franc. »\n\nElle traverse le sable, considère vos pieds, puis en déplace un du bout de sa botte, sans cérémonie, comme on cale un meuble.\n\nBrunehaut (neutre) : « Là. Retenez ce que vos jambes viennent de faire, en bien ou en mal : c'est la seule leçon du jour qui restera. Le reste, vous l'aurez oublié au souper. »\n\nAliénor abaisse sa lame et salue, au degré près. Un peu de sable s'est pris dans sa tresse ; elle l'ignore, et personne n'osera le lui dire.\n\nAliénor (neutre) : « Une fourche. Je maintiens. »\n\nElle marque un temps, les yeux sur votre main restée serrée autour du frêne.\n\nAliénor (gene) : « Les fourches ne lâchent pas, remarquez. C'est une qualité. Mineure. »\n\nBrunehaut (colere) : « Dix tours de lice, tout le monde ! Vaire, debout : un bleu n'est pas un testament ! »\n\nLes dix tours durent une éternité à peu près raisonnable. Odilon les achève sur le dos, les bras en croix, en confiant au ciel qu'il aurait dû naître dans une famille de notaires. Personne n'a rendu son déjeuner ; Dame Brunehaut en paraît vaguement déçue.\n\nBrunehaut (neutre) : « Les lames au râtelier. Par paires, comme vous avez combattu. Qui range ensemble apprend à ne pas s'éborgner. »\n\nDevant le râtelier, Aliénor vous attend. Elle a ramassé les deux lames ; elle vous tend la vôtre, poignée en avant, et pour la première fois de la journée son regard est à la hauteur du vôtre.",
+      "rapport": {
+        "resume": "Dame Brunehaut interrompt l'échange, juge le résultat « franc » et corrige les appuis du héros. Aliénor maintient qu'il tient sa lame comme une fourche, puis concède que les fourches ne lâchent pas. Après dix tours de lice, les binômes rangent les lames, et Aliénor tend la sienne au héros devant le râtelier.",
+        "lieu": "Lice du Connétable",
+        "typeLieu": "arene",
+        "presents": [
+          "Brunehaut",
+          "Aliénor",
+          "Odilon"
+        ],
+        "changements": [
+          {
+            "type": "resonance",
+            "cible": "Aliénor",
+            "delta": 1,
+            "motif": "Elle a reconnu, à contrecœur, que le héros ne lâche pas."
+          }
+        ],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Aliénor",
+            "texte": "J'ai dit que les fourches ne lâchaient pas. C'était exact. Je ne sais pas pourquoi j'ai éprouvé le besoin de le dire."
+          },
+          {
+            "personnage": "Brunehaut",
+            "texte": "J'ai recalé les pieds du pupille à la botte. Il a fait ses dix tours sans se plaindre."
+          },
+          {
+            "personnage": "Odilon",
+            "texte": "J'ai fini les dix tours sur le dos. Le pupille, lui, était encore debout pour ranger les lames avec Hautefeuille."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Prendre la lame et la ranger en silence",
+          "Demander à Aliénor ce qu'il faut corriger",
+          "Répondre à la remarque sur la fourche"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "calme",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Galerie des Blasons]]\n\nPour gagner l'Aile Basse, il faut longer toute la Galerie des Blasons : deux cents écus peints, du sol à la voûte, un par maison ayant donné un élève à Astremont. À cette heure, les lampes à huile font luire l'or des lions et le rouge des tours. On vous y attend. Gauvain de Montreval est adossé sous un sanglier d'argent, deux camarades à ses côtés, avec l'aisance de quelqu'un à qui le mur appartient.\n\nGauvain (sourire) : « Notre pupille ! Je disais justement à ces messieurs que vous deviez chercher le vôtre. Regardez bien : il se trouve sûrement quelque part entre la pelle et le râteau. »\n\nLes deux autres rient à l'heure dite. Gauvain se détache du mur et vient jusqu'à vous, tout près, la voix aimable.\n\nGauvain (neutre) : « Un conseil d'ami. Les premières années n'ont pas le droit de se battre hors de la lice. C'est dommage : vous avez l'air d'en avoir très envie. Non ? Même pas un peu ? »\n\nDes talons claquent sur les dalles. Aliénor de Hautefeuille remonte la galerie, ses gants à la main, et ne ralentit pas.\n\nAliénor (neutre) : « Montreval. Vous tenez salon dans un passage. Votre oncle vous a pourtant fait donner des maîtres de maintien. Plusieurs, m'a-t-on dit. »\n\nGauvain (gene) : « Aliénor. Toujours un plaisir. »\n\nAliénor (neutre) : « Naturellement. »\n\nElle attend, sans un mot de plus, qu'il se range. Il se range ; ses deux ombres aussi. Gauvain s'éloigne en riant un peu trop fort, et la galerie retrouve son silence de peinture.\n\nAliénor (neutre) : « Ne vous méprenez pas. Je n'ai rien fait pour vous : il encombrait. »\n\nElle enfile un gant, doigt après doigt, puis ajoute sans vous regarder.\n\nAliénor (gene) : « Demain, à la lice. Votre pied arrière traîne. Corrigez-le avant que quelqu'un de moins patient que moi ne s'en aperçoive. »\n\nElle n'est pas encore partie.",
+      "rapport": {
+        "resume": "Dans la Galerie des Blasons, Gauvain de Montreval et deux camarades attendent le héros pour se moquer de son absence de blason et le provoquer à mots couverts. Aliénor survient et fait reculer Gauvain d'une seule remarque. Elle assure n'avoir rien fait pour le héros, puis lui signale que son pied arrière traîne.",
+        "lieu": "Galerie des Blasons",
+        "typeLieu": "couloir",
+        "presents": [
+          "Gauvain",
+          "Aliénor"
+        ],
+        "changements": [
+          {
+            "type": "resonance",
+            "cible": "Aliénor",
+            "delta": 2,
+            "motif": "Elle a écarté Gauvain, puis donné au héros un conseil pour la lice."
+          }
+        ],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Gauvain de Montreval a rappelé au héros que les premières années n'ont pas le droit de se battre hors de la lice."
+        ],
+        "promesses": [
+          "Aliénor attend du héros qu'il corrige son pied arrière à la prochaine séance de lice."
+        ],
+        "souvenirs": [
+          {
+            "personnage": "Gauvain",
+            "texte": "J'avais le pupille à portée de main dans la galerie, et Aliénor est venue me faire la leçon devant lui. Je m'en souviendrai, aimablement."
+          },
+          {
+            "personnage": "Aliénor",
+            "texte": "J'ai fait déguerpir Montreval de la galerie. J'ai dit au pupille que ce n'était pas pour lui. C'était presque vrai."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Remercier Aliénor malgré tout",
+          "Demander à Aliénor de montrer le mouvement du pied",
+          "Laisser Aliénor partir sans un mot"
+        ],
+        "finCreneau": false,
+        "indiceRevele": false,
+        "humeur": "tendu",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Toit des Cuisines]]\n\nMaëlle ne vous a pas demandé votre avis. Elle vous a cueilli au pied de l'escalier de l'Aile Basse, un torchon noué dans une main, votre manche dans l'autre, vous a fait traverser l'arrière-cuisine au pas de course, puis grimper une échelle que Guillemette, à l'en croire, ne voit pas, par principe.\n\nLe Toit des Cuisines est plat, tiède sous les semelles à cause des fours, et il donne sur tout : les tours de l'académie découpées dans le couchant et, tout en bas, Val-d'Astre qui allume ses lanternes une à une, comme quelqu'un qui compte sa monnaie.\n\nMaëlle dénoue le torchon. Deux chaussons aux pommes, un peu écrasés, encore chauds.\n\nMaëlle (sourire) : « Premier jour, et tu tiens debout. Ça se fête. Ils sont ratés, d'après Guillemette : trop cuits d'un côté. Les ratés montent toujours ici, c'est la règle de la maison. »\n\nElle s'assoit au bord, les jambes dans le vide, et mord dans le sien sans attendre.\n\nMaëlle (neutre) : « Tu vois la lanterne verte, près du pont ? C'est le four de Perrin. Il allume le premier et il éteint le dernier. Quand j'ai eu une journée pourrie, je regarde s'il brûle encore. Il brûle toujours. C'est idiot, mais ça marche. »\n\nLe vent apporte une odeur de pain et de feu de bois. Quelque part sous vos pieds, Guillemette houspille une marmite.\n\nMaëlle (gene) : « Je n'amène personne ici, d'habitude. Va pas croire que t'es spécial : t'avais juste la tête de quelqu'un qui a besoin d'un chausson. »\n\nElle vous tend le second et garde la main ouverte un instant de trop, le temps de s'assurer que vous le tenez bien. En bas, la lanterne verte brille. Le ciel passe du cuivre au bleu, et Maëlle, pour une fois, ne dit rien : elle vous laisse la place de parler.",
+      "rapport": {
+        "resume": "Maëlle entraîne le héros sur le Toit des Cuisines, son refuge, pour fêter la fin de son premier jour avec deux chaussons aux pommes « ratés ». Elle lui montre la lanterne verte du four de Perrin, qu'elle regarde les mauvais jours, et avoue n'amener personne ici d'ordinaire.",
+        "lieu": "Toit des Cuisines",
+        "typeLieu": "toit",
+        "presents": [
+          "Maëlle"
+        ],
+        "changements": [
+          {
+            "type": "resonance",
+            "cible": "Maëlle",
+            "delta": 4,
+            "motif": "Elle a partagé avec le héros son refuge du Toit des Cuisines et la lanterne verte qu'elle regarde les mauvais jours."
+          }
+        ],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Maëlle se réfugie sur le Toit des Cuisines, où montent les pâtisseries « ratées » de Guillemette.",
+          "Depuis le toit, on voit la lanterne verte du four de Perrin, près du pont de Val-d'Astre : elle s'allume la première et s'éteint la dernière."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Maëlle",
+            "texte": "Je l'ai fait monter sur mon toit dès le premier soir, et je lui ai montré la lanterne de Perrin. Je ne sais pas ce qui m'a pris. Il a tenu son chausson comme un truc fragile."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Demander ce qu'était sa dernière journée pourrie",
+          "Raconter sa propre journée",
+          "Regarder la lanterne verte en silence avec elle"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "calme",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": {
+          "titre": "Le souper des toits",
+          "description": "Au crépuscule, sur le toit plat des cuisines d'Astremont, Maëlle, assise au bord, les jambes dans le vide, tend un chausson aux pommes encore chaud au héros. Derrière eux, les tours de l'académie se découpent dans un ciel de cuivre ; en contrebas, les lanternes de Val-d'Astre s'allument une à une, dont une verte, près du pont."
+        },
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Dortoir de l'Aile Basse]]\n\nLa chambre onze, sous les combles de l'Aile Basse, possède deux lits, une table, une lucarne, et une pente de toit conçue pour qu'on s'y cogne. Odilon s'y est déjà cogné : il se frotte le front, assis sur sa malle ouverte, au milieu d'un naufrage de chemises. La pluie s'est mise à tomber sur les ardoises, juste au-dessus.\n\nOdilon (gene) : « J'ai pris le lit de gauche. Si tu préfères la gauche, je prends la droite. Si tu préfères la droite, tant mieux, parce que j'ai déjà rangé mes chaussettes sous la gauche. »\n\nIl exhume de la malle un pot de grès scellé à la cire et le pose sur la table avec des précautions d'officiant.\n\nOdilon (sourire) : « Rillettes d'oie. Ma mère a dit : pour les grandes occasions, ou si tu te fais un ami. Elle n'y croyait pas beaucoup, à l'ami. Elle l'a dit gentiment. »\n\nDe l'autre côté de la cloison, quelqu'un fait ses gammes sur une flûte, mal, avec persévérance. L'unique chandelle, car l'Intendance compte, fait danser l'ombre des poutres.\n\nOdilon (neutre) : « Tu as vu mon bleu ? Montreval s'est excusé trois fois. Trois. Je crois que c'est pire que s'il avait ri. »\n\nIl soulève sa chemise sur une hanche déjà violette, la contemple en connaisseur, puis se laisse tomber sur son lit, qui proteste.\n\nOdilon (sourire) : « Demain matin, c'est la Tour des Harmoniques. Il paraît que la répétitrice a fait exploser une armoire l'an dernier. Par enthousiasme. Je trouve ça rassurant, moi, quelqu'un d'enthousiaste. »\n\nUn silence. À côté, la flûte attaque le même passage pour la neuvième fois.\n\nOdilon (gene) : « Dis. Ça t'ennuie si je parle un peu avant de dormir ? Chez moi on est sept, je ne sais pas m'endormir dans le silence. Tu peux me raconter ta journée, sinon. Ou choisir la gauche. »",
+      "rapport": {
+        "resume": "Première nuit dans la chambre onze de l'Aile Basse. Odilon range ses affaires, sort le pot de rillettes d'oie que sa mère réserve « aux grandes occasions, ou si tu te fais un ami », et montre le bleu que lui a laissé Gauvain. Incapable de s'endormir dans le silence, il demande au héros de lui raconter sa journée.",
+        "lieu": "Dortoir de l'Aile Basse",
+        "typeLieu": "dortoir",
+        "presents": [
+          "Odilon"
+        ],
+        "changements": [],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Odilon garde dans sa malle un pot de rillettes d'oie que sa mère lui a confié pour les grandes occasions."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Odilon",
+            "texte": "J'ai sorti les rillettes de maman le premier soir. Elle avait dit : si tu te fais un ami. Je crois que ça compte."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Raconter sa journée à Odilon",
+          "Goûter les rillettes d'oie",
+          "Souffler la chandelle et dormir"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "joyeux",
+        "effet": "aucun",
+        "meteo": "pluie",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Tour des Harmoniques]]\n\nLa Tour des Harmoniques se gravit par un escalier qui tourne assez longtemps pour qu'on regrette son petit déjeuner. En haut, une salle ronde, des fenêtres partout, et sur chaque pupitre une cloche de verre grosse comme le poing. Le maître en titre dort dans un fauteuil, près du poêle, la barbe sur la poitrine, et personne ne s'en étonne.\n\nLa répétitrice, elle, ne dort pas. Elle court d'un pupitre à l'autre, les lunettes de travers, un diapason dans chaque main et un troisième planté dans son chignon.\n\nSibylle (sourire) : « Bonjour ! Sibylle Orfraie, deuxième année, je remplace maître Aubin quand il… enfin, tout le temps. Exercice un : faire chanter la cloche. Sans la toucher. Vous écoutez sa note, vous cherchez la vôtre, vous posez l'une sur l'autre. C'est tout. C'est très difficile. Allez ! »\n\nLa salle se met à bourdonner. La cloche d'Aliénor tinte, net, du premier coup. Celle de Gauvain aussi, un peu plus fort que nécessaire. Celle d'Odilon émet un petit bruit mouillé qui le fait rougir.\n\nSibylle s'arrête devant votre pupitre, vous met d'autorité un diapason dans la main et le fait sonner elle-même contre le bois.\n\nSibylle (neutre) : « Ne pousse pas. Tout le monde pousse. Écoute juste où ça frotte. »\n\nVotre cloche reste muette. Parfaitement, obstinément muette. En revanche, sur le nez de Sibylle, les lunettes se mettent à chanter : une note claire, ténue, qui fait lever la tête à trois rangs.\n\nSibylle (surprise) : « Oh. Oh ! Tu n'as pas raté. Tu as raté à côté ! C'est beaucoup plus intéressant, personne ne rate à côté, il faut… ne bouge pas. Si, bouge. Non. »\n\nElle ôte ses lunettes et les regarde vibrer au creux de sa paume, myope et ravie. Dans son fauteuil, le maître ronfle en mesure.\n\nSibylle (sourire) : « On recommence. Tout de suite. Sauf si tu es fatigué, ça fatigue, la première fois. Tu es fatigué ? »",
+      "rapport": {
+        "resume": "Premier travail pratique à la Tour des Harmoniques, mené par la répétitrice Sibylle Orfraie pendant que maître Aubin dort. Il s'agit de faire chanter une cloche de verre sans la toucher : celle du héros reste muette, mais ce sont les lunettes de Sibylle qui se mettent à chanter. Ravie de ce raté « à côté », elle veut recommencer sur-le-champ.",
+        "lieu": "Tour des Harmoniques",
+        "typeLieu": "tour",
+        "presents": [
+          "Sibylle",
+          "Aliénor",
+          "Gauvain",
+          "Odilon"
+        ],
+        "changements": [
+          {
+            "type": "resonance",
+            "cible": "Sibylle",
+            "delta": 2,
+            "motif": "Le raté « à côté » du héros l'a enthousiasmée ; elle s'est occupée de lui en personne."
+          }
+        ],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Au premier exercice d'accord, la cloche de verre du héros est restée muette, mais les lunettes de Sibylle se sont mises à chanter."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Sibylle",
+            "texte": "Il n'a pas raté, il a raté à côté : ce sont mes lunettes qui ont chanté. Je n'ai aucune table pour ça. Il m'en faut une."
+          },
+          {
+            "personnage": "Aliénor",
+            "texte": "Ma cloche a tinté du premier coup. Celle du pupille, non ; mais j'ai entendu les lunettes d'Orfraie, comme tout le monde."
+          },
+          {
+            "personnage": "Odilon",
+            "texte": "Ma cloche a fait un bruit que je préfère oublier. Celle du pupille n'a rien fait du tout, et la répétitrice a eu l'air d'avoir reçu un cadeau."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [
+          {
+            "categorie": "monde",
+            "titre": "L'Accord",
+            "texte": "Nom de la magie en Sarrance. Chaque être et chaque chose a sa note ; lancer un sortilège, c'est écouter celle de la chose, trouver la sienne et poser l'une sur l'autre. On ne « pousse » pas un accord : on cherche où ça frotte."
+          }
+        ],
+        "pistes": [
+          "Recommencer l'exercice",
+          "Demander ce que veut dire « rater à côté »",
+          "Avouer une légère fatigue"
+        ],
+        "finCreneau": false,
+        "indiceRevele": false,
+        "humeur": "joyeux",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Bibliothèque du Chapitre]]\n\nL'emploi du temps a un trou. À la troisième cloche, chaque élève rejoint le précepteur de sa maison pour l'heure d'héraldique familiale : on y apprend ses ancêtres, ses alliances et ses querelles. Faute d'ancêtres au programme, on a inscrit en face de votre nom, d'une plume un peu embarrassée, étude libre à la Bibliothèque du Chapitre.\n\nLa bibliothèque est donc à vous : des rayonnages jusqu'aux galeries de bois, de la poussière qui tourne dans le soleil, le pas d'une horloge. Et, derrière le pupitre des chartes, le bruit très net d'une poire qu'on croque.\n\nMaîtresse Vellane est assise par terre entre deux rayonnages, un volume sur les genoux, la poire à la main. Elle vous regarde. Elle regarde la poire.\n\nIsaure (gene) : « Place quarante-sept. Vous n'avez rien vu. »\n\nIsaure (neutre) : « Le règlement interdit toute nourriture à moins de dix pas des chartes. Je le sais, je l'ai rédigé. Il ne dit rien du onzième pas. Comptez, si le cœur vous en dit. »\n\nDes pas rapides, un froissement de papier, et Sibylle Orfraie surgit au bout de l'allée, serrant contre elle une liasse épaisse comme une brique.\n\nSibylle (colere) : « Refusé ! Encore ! Et pas lu : le ruban est intact, c'est mon nœud, je reconnais mon nœud ! »\n\nIsaure (neutre) : « Place soixante et onze. Votre mémoire compte cent quarante pages. Le règlement en admet quarante. »\n\nSibylle (colere) : « Il y a cent pages de preuves ! »\n\nIsaure (sourire) : « Alors prouvez plus court. Une idée qui ne tient pas en quarante pages ne tient pas davantage en cent quarante : elle s'y cache. »\n\nSibylle ouvre la bouche, la referme, et vous découvre enfin.\n\nSibylle (surprise) : « Toi ! Tu y étais, tout à l'heure. Dis-lui. Mes lunettes ont chanté, oui ou non ? »\n\nMaîtresse Vellane croque sa poire, à onze pas des chartes, et attend votre déposition avec un intérêt poli.",
+      "rapport": {
+        "resume": "Pendant l'heure d'héraldique familiale, dont il est dispensé faute de maison, le héros surprend maîtresse Vellane en train de manger une poire dans la Bibliothèque du Chapitre. Sibylle fait irruption, furieuse que son mémoire de cent quarante pages ait encore été refusé sans être lu. Elle prend le héros à témoin du chant de ses lunettes.",
+        "lieu": "Bibliothèque du Chapitre",
+        "typeLieu": "bibliotheque",
+        "presents": [
+          "Isaure",
+          "Sibylle"
+        ],
+        "changements": [
+          {
+            "type": "resonance",
+            "cible": "Isaure",
+            "delta": 1,
+            "motif": "Surprise une poire à la main, elle a mis le héros dans la confidence de la règle du onzième pas."
+          }
+        ],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Le héros n'a pas d'heure d'héraldique familiale : il a étude libre à la Bibliothèque du Chapitre à la troisième cloche.",
+          "Le mémoire de Sibylle, cent quarante pages, est refusé par le Collège des Robes parce que le règlement en admet quarante."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Isaure",
+            "texte": "La place quarante-sept m'a trouvée par terre avec une poire, à onze pas des chartes. Puis la place soixante et onze est venue réclamer cent pages de trop."
+          },
+          {
+            "personnage": "Sibylle",
+            "texte": "Vellane m'a dit de prouver plus court. J'ai pris le pupille à témoin pour mes lunettes : c'est le seul qui était là et qui n'a aucune raison de mentir."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Confirmer que les lunettes ont chanté",
+          "Rester prudent devant la professeure",
+          "Demander de quoi parle le mémoire"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "joyeux",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Intendance]]\n\nMaître Anselme reçoit les boursiers à l'heure du repas, parce qu'il a observé que la faim abrège les réclamations. Comme Astremont ne compte qu'un seul pupille, la file d'attente, c'est vous.\n\nL'Intendance est une pièce basse où tout a été rangé par quelqu'un qui ne fait confiance à personne : casiers étiquetés, chandelles liées par douzaines, une balance à monnaie sous son globe. Le grand registre de la Cour d'Honneur est ouvert sur le comptoir, à la page de votre promotion.\n\nAnselme (sourire) : « Ah, chambre onze. La porte ? En soulevant, voilà. Votre pension du trimestre : quatre écus, moins la chandelle, moins le blanchissage. Reste trois. Ne me regardez pas ainsi, c'est le blanchissage qui a augmenté, pas moi. »\n\nIl aligne trois pièces sur le bois, puis tourne le registre vers vous et pose un doigt sec au bas de la page.\n\nAnselme (neutre) : « Signez ici. Votre ligne. »\n\nToutes les lignes se lisent de la même façon : un nom, une maison, puis, dans la dernière colonne, le répondant, celui qui garantit les frais et la conduite. Un père, un oncle, un sceau de famille pressé dans la cire rouge. Sur votre ligne, la dernière case n'est pas vide. Une bande de papier la recouvre, collée bord à bord, retenue par une goutte de cire grise où l'on n'a imprimé aucune arme.\n\nAnselme pose son buvard dessus. Il ne dit rien. Il redresse ses lunettes, aligne la plume sur le bord du comptoir, et quand il reprend la parole, c'est de sa voix de tous les jours.\n\nAnselme (neutre) : « Le suif a encore pris deux sous la livre, figurez-vous. À ce train-là, vous étudierez au clair de lune avant la Fête des Lanternes. »\n\nLa plume attend dans l'encrier. Le buvard n'a pas bougé, et la main du vieil homme repose dessus, à plat, comme par hasard.",
+      "rapport": {
+        "resume": "À l'Intendance, maître Anselme verse au héros sa pension du trimestre, trois écus une fois déduits la chandelle et le blanchissage, et lui fait signer le grand registre. Sur la ligne du héros, la case du répondant est recouverte d'une bande de papier cachetée de cire grise ; Anselme y pose son buvard sans un mot et parle du prix du suif.",
+        "lieu": "Intendance",
+        "typeLieu": "bureau",
+        "presents": [
+          "Anselme"
+        ],
+        "changements": [
+          {
+            "type": "or",
+            "cible": "",
+            "delta": 3,
+            "motif": "Pension trimestrielle de pupille, déduction faite de la chandelle et du blanchissage."
+          }
+        ],
+        "journal": [
+          {
+            "type": "indice",
+            "texte": "Dans le grand registre de l'Intendance, sur votre ligne, la case du répondant est recouverte d'une bande de papier cachetée de cire grise, sans armoiries. Maître Anselme a posé son buvard dessus sans un mot."
+          }
+        ],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Dans le registre des promotions, chaque élève a un répondant qui signe pour lui ; la case du répondant du héros est masquée par une bande de papier cachetée de cire grise sans armoiries.",
+          "La pension d'un pupille de la Couronne est de quatre écus par trimestre, avant retenues."
+        ],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Anselme",
+            "texte": "Le pupille est venu émarger. J'ai mis le buvard sur la case du répondant et j'ai parlé du suif. Il a regardé ma main ; je ne l'ai pas retirée."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Signer sans poser de question",
+          "Demander qui est son répondant",
+          "Parler chandelles avec Anselme"
+        ],
+        "finCreneau": true,
+        "indiceRevele": true,
+        "humeur": "calme",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Lice du Connétable]]\n\nDeuxième jour, deuxième lice. Le sable a été ratissé comme si hier n'avait pas eu lieu ; vos courbatures, elles, sont d'un autre avis. Dame Brunehaut distribue les lames de frêne en les lançant, ce qui constitue déjà un exercice.\n\nBrunehaut (neutre) : « Gardes libres, un quart d'heure. Je regarde. Celui que je ne regarde pas, c'est qu'il n'y a plus rien à sauver. »\n\nÀ peine êtes-vous en position qu'une pointe de frêne vient tapoter votre talon arrière, deux fois, sèchement.\n\nAliénor (neutre) : « Il traîne. Je vous l'avais dit. Ramenez-le sous la hanche. Moins. Voilà. Ne respirez plus, c'était correct. »\n\nAccoudée à la barrière, un panier de linge calé sur la hanche, Maëlle siffle entre ses dents.\n\nMaëlle (sourire) : « Toute la cuisine est au courant, pour la fourche. Aujourd'hui, c'est presque un râteau. Lâche rien, le pupille ! »\n\nAliénor (colere) : « La lice est réservée aux élèves inscrits au cours. »\n\nMaëlle (sourire) : « Je suis inscrite au linge, Hautefeuille. Le linge passe partout. »\n\nElles se toisent par-dessus votre épaule, avec la politesse de deux chats sur le même mur. Odilon, lui, s'exerce contre un poteau, et le poteau mène.\n\nBrunehaut (neutre) : « Le pupille. Ce pied, c'est mieux. Pas bien. Mieux. »\n\nVenant d'elle, cela fait tourner quelques têtes ; Gauvain examine le fil de sa lame avec beaucoup d'attention.\n\nBrunehaut (neutre) : « Écoutez tous. Dans huit jours, première passe d'armes notée, par binômes. Vous choisissez votre partenaire d'exercice aujourd'hui et vous le gardez jusqu'à la Fête des Lanternes. Prenez quelqu'un qui vous rendra meilleur, pas quelqu'un qui vous plaît. Si c'est la même personne, tant pis pour vous. »\n\nLe rang se défait dans un brouhaha de noms. Odilon lève vers vous un regard de naufragé plein d'espoir. Aliénor rajuste son gant, très occupée à ne pas attendre. Et, de la barrière, Maëlle vous adresse un haussement de sourcils qui vaut tout un commentaire.",
+      "rapport": {
+        "resume": "Deuxième séance à la lice. Aliénor corrige le pied arrière du héros comme elle l'avait annoncé, sous les commentaires de Maëlle, venue avec un panier de linge ; Dame Brunehaut juge le résultat « mieux ». Elle annonce une première passe d'armes notée dans huit jours : chacun doit choisir aujourd'hui son partenaire d'exercice.",
+        "lieu": "Lice du Connétable",
+        "typeLieu": "arene",
+        "presents": [
+          "Brunehaut",
+          "Aliénor",
+          "Maëlle",
+          "Odilon",
+          "Gauvain"
+        ],
+        "changements": [
+          {
+            "type": "resonance",
+            "cible": "Aliénor",
+            "delta": 2,
+            "motif": "Elle a tenu parole et corrigé elle-même la garde du héros."
+          },
+          {
+            "type": "reputation",
+            "cible": "Maisons d'Épée",
+            "delta": 2,
+            "motif": "Dame Brunehaut a reconnu les progrès du pupille devant toute la promotion."
+          }
+        ],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [
+          "Une première passe d'armes notée, par binômes, aura lieu dans huit jours ; les partenaires d'exercice sont choisis pour durer jusqu'à la Fête des Lanternes."
+        ],
+        "promesses": [
+          "Le héros doit choisir aujourd'hui son partenaire d'exercice pour la passe d'armes."
+        ],
+        "souvenirs": [
+          {
+            "personnage": "Aliénor",
+            "texte": "J'ai corrigé son pied arrière. Il l'a ramené sous la hanche au deuxième essai. Puis la Rayée est venue faire son numéro à la barrière."
+          },
+          {
+            "personnage": "Maëlle",
+            "texte": "Je suis passée à la lice avec mon panier. Hautefeuille lui tapotait le talon comme à un poulain. Il s'en sortait pas mal, le râteau."
+          },
+          {
+            "personnage": "Brunehaut",
+            "texte": "J'ai dit « mieux » au pupille. Il faudra voir qui il prend comme partenaire : ça en dit long, ce genre de choix."
+          },
+          {
+            "personnage": "Odilon",
+            "texte": "Il faut choisir un partenaire pour la passe d'armes. J'ai regardé le pupille. J'espère que ça ne se voyait pas trop."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Proposer à Aliénor de faire équipe",
+          "Choisir Odilon comme partenaire",
+          "Aller demander son avis à Maëlle"
+        ],
+        "finCreneau": false,
+        "indiceRevele": false,
+        "humeur": "joyeux",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    }
+  ],
+  "generiques": [
+    {
+      "prose": "[[LIEU: Bibliothèque du Chapitre]]\n\nLa Bibliothèque du Chapitre a ses habitués, et vous commencez à les reconnaître au bruit. Le grattement serré, régulier, c'est Aliénor, trois tables plus loin, qui recopie ses notes au propre. Le froissement suivi d'un juron étouffé, c'est Sibylle.\n\nElle occupe une table entière à elle seule : des feuilles, des diapasons, une pomme oubliée, et un ruban qu'elle enroule autour de son doigt en fixant une colonne de chiffres comme on fixe quelqu'un qui vous doit de l'argent.\n\nSibylle (colere) : *« Quarante pages. Quarante. On ne démontre pas le monde en quarante pages. »*\n\nElle relève la tête, vous aperçoit, et pousse aussitôt une pile pour dégager la chaise d'en face.\n\nSibylle (sourire) : *« Assieds-toi ! Enfin, si tu veux. Tu as le devoir de Vellane ? Je le connais par cœur, je l'ai fait l'an dernier. J'ai eu quatre. Ne suis pas mes conseils. »*\n\nDu haut de la galerie, maîtresse Vellane descend l'escalier à vis, des volumes plein les bras. Elle s'arrête à votre hauteur, considère la pomme sur la table, puis Sibylle, puis de nouveau la pomme.\n\nIsaure (neutre) : *« Dix pas, place soixante et onze. »*\n\nSibylle (gene) : *« Elle est décorative. »*\n\nIsaure (sourire) : *« Alors décorez plus loin. Place quarante-sept, le Coutumier est libre jusqu'à la cloche. Chapitre trois : tout le monde le saute, et tout le monde a tort. »*\n\nElle repart sans attendre de réponse. Sibylle range la pomme dans sa manche avec une dignité blessée, puis pousse vers vous un diapason, par habitude, comme d'autres offrent du pain.",
+      "rapport": {
+        "resume": "Heure d'étude à la Bibliothèque du Chapitre. Sibylle, qui peine à réduire son mémoire à quarante pages, fait une place au héros à sa table ; maîtresse Vellane, de passage, la rappelle à la règle des dix pas et recommande au héros le chapitre trois du Coutumier.",
+        "lieu": "Bibliothèque du Chapitre",
+        "typeLieu": "bibliotheque",
+        "presents": [
+          "Sibylle",
+          "Isaure",
+          "Aliénor"
+        ],
+        "changements": [],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Sibylle",
+            "texte": "Le pupille est venu travailler à ma table, à la bibliothèque. Je lui ai passé un diapason sans y penser."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Ouvrir le Coutumier au chapitre trois",
+          "Aider Sibylle à couper dans son mémoire",
+          "Aller saluer Aliénor à sa table"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "calme",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Grand Réfectoire]]\n\nAu Grand Réfectoire, le vacarme a ses marées, et vous arrivez à marée haute. Les bannières pendent au-dessus des tables de maison ; la table du bout, elle, n'a toujours que sa nappe tachée et sa vue imprenable sur la porte des cuisines.\n\nGuillemette (colere) : « Qui m'a rendu une écuelle avec la cuillère dedans ? Une cuillère, ça se rend à part ! On n'est pas chez les loups ! »\n\nOdilon vous a gardé une place et, ce qui est plus remarquable, une part.\n\nOdilon (sourire) : « J'ai compris le système. Si tu arrives avant la troisième tablée, il reste du croustillant. Après, c'est du mou. J'ai fait un tableau. Tu veux voir mon tableau ? »\n\nMaëlle passe, un plateau de pichets en équilibre sur l'avant-bras, et dépose au vol un quignon entre vous deux sans ralentir.\n\nMaëlle (sourire) : « Cadeau de la maison. Ne dites pas d'où ça vient. Ou plutôt si, dites-le : ça fera enrager la table des Montreval. »\n\nÀ ladite table, Gauvain raconte quelque chose qui fait rire à intervalles réguliers. Plus loin, Aliénor mange seule au bout de la tablée Hautefeuille, un cahier ouvert à côté de son assiette, et tourne les pages sans lever les yeux.\n\nOdilon (neutre) : « Tu crois qu'on a le droit de reprendre de la soupe ? Personne ne le fait. Mais personne ne l'interdit. C'est un vide juridique, il faudrait poser la question à maîtresse Vellane. »\n\nLa louche de Guillemette cogne contre la marmite comme une cloche de plus. Il reste de la place sur le banc, du pain sur la table, et un moment devant vous avant la prochaine sonnerie.",
+      "rapport": {
+        "resume": "Repas au Grand Réfectoire, à la table du bout. Odilon a gardé une place et une part au héros et expose sa théorie du croustillant ; Maëlle dépose un quignon en passant ; Guillemette tonne contre les cuillères mal rendues.",
+        "lieu": "Grand Réfectoire",
+        "typeLieu": "refectoire",
+        "presents": [
+          "Odilon",
+          "Maëlle",
+          "Guillemette",
+          "Gauvain",
+          "Aliénor"
+        ],
+        "changements": [],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Odilon",
+            "texte": "J'ai gardé une place et une part au pupille, à la table du bout. Il a bien voulu regarder mon tableau."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Demander à voir le tableau d'Odilon",
+          "Aller reprendre de la soupe",
+          "Porter un bout de pain à Aliénor"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "joyeux",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Dortoir de l'Aile Basse]]\n\nDans la chambre onze, la pente du toit n'a pas bougé, et Odilon vient encore de la trouver avec le front. Il s'assoit sur son lit en se massant le crâne, philosophe.\n\nOdilon (neutre) : « Je crois qu'elle m'en veut personnellement. »\n\nLa table a disparu sous ses affaires : un devoir commencé trois fois, le pot de rillettes, entamé désormais et surveillé de près, et une lettre de sa mère dont il vous lit des passages sans qu'on le lui demande.\n\nOdilon (sourire) : « Écoute ça. Mange, mais pas tout. Travaille, mais pas trop. Et ne te bats pas, tu marques. Elle me connaît bien. »\n\nDe l'autre côté de la cloison, la flûte reprend. Le voisin a progressé : il se trompe maintenant un peu plus loin dans le morceau.\n\nOdilon (gene) : « J'ai fini par aller le voir, tu sais. Il s'appelle Barnabé, il est en troisième année, et il joue pour sa fiancée. Je n'ai pas eu le cœur de lui dire. Je lui ai dit que ça s'entendait à peine. »\n\nIl étale une chemise sur la table, découvre un accroc, et vous présente le tout avec un fil et une aiguille qu'il tient comme deux objets hostiles.\n\nOdilon (gene) : « Tu sais coudre, toi ? Chez nous, c'était ma sœur. Je sais faire un nœud. Enfin, je sais faire quelque chose qui ne se défait plus. »\n\nPar la lucarne, on voit un morceau de ciel et le coin d'une tour. La chandelle a encore de quoi tenir un moment ; la flûte aussi, hélas.",
+      "rapport": {
+        "resume": "Moment de repos dans la chambre onze. Odilon lit au héros la lettre de sa mère, raconte sa visite au flûtiste d'à côté, un certain Barnabé qui joue pour sa fiancée, puis demande de l'aide pour recoudre une chemise.",
+        "lieu": "Dortoir de l'Aile Basse",
+        "typeLieu": "dortoir",
+        "presents": [
+          "Odilon"
+        ],
+        "changements": [],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Odilon",
+            "texte": "J'ai lu la lettre de maman au pupille, et je lui ai demandé s'il savait coudre. Il ne s'est pas moqué de mon nœud."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Recoudre la chemise d'Odilon",
+          "Finir son devoir à la chandelle",
+          "Aller frapper chez le flûtiste"
+        ],
+        "finCreneau": true,
+        "indiceRevele": false,
+        "humeur": "joyeux",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    },
+    {
+      "prose": "[[LIEU: Lice du Connétable]]\n\nLa Lice du Connétable sent le sable mouillé et le cuir. Dame Brunehaut a planté au milieu une rangée de poteaux coiffés de vieux casques, et elle les présente à la promotion avec plus d'égards qu'elle n'en a jamais eu pour aucun de vous.\n\nBrunehaut (neutre) : « Vos adversaires du jour. Ils ne bougent pas, ils ne se plaignent pas, et la moitié d'entre vous trouvera le moyen de perdre. Vingt touches à la tête, vingt au flanc. Comptez à voix haute, que j'entende qui triche. »\n\nLes lames de frêne se mettent à claquer en désordre. Odilon compte avec application, se trompe à douze, et repart de un, par honnêteté.\n\nÀ deux poteaux du vôtre, Aliénor frappe à une cadence d'horloge. Elle ne s'interrompt qu'une fois, le temps d'un regard à vos appuis.\n\nAliénor (neutre) : « Le pied. »\n\nRien de plus ; elle a déjà repris. Plus loin, Gauvain touche juste, salue son poteau avec grâce, et récolte les rires qu'il était venu chercher.\n\nBrunehaut (colere) : « Montreval, quand le poteau vous rendra votre salut, vous viendrez me chercher ! Vaire, on ne s'excuse pas auprès du matériel ! »\n\nOdilon (gene) : « Je l'ai touché à l'oreille, maîtresse. Enfin, là où il aurait une oreille. »\n\nElle passe derrière vous et s'arrête. Son regard pèse sur vos épaules, puis sur vos pieds, avec la patience d'un menuisier qui cherche le défaut d'une planche.\n\nBrunehaut (neutre) : « Le pupille. Vous frappez comme quelqu'un qui a déjà porté des charges. Ce n'est pas un défaut. Montrez-moi les dix prochaines. »",
+      "rapport": {
+        "resume": "Exercice aux poteaux à la Lice du Connétable : vingt touches à la tête, vingt au flanc, comptées à voix haute. Aliénor rappelle au héros de surveiller son pied, Gauvain amuse la galerie, et Dame Brunehaut s'arrête derrière le héros pour regarder ses dix prochaines touches.",
+        "lieu": "Lice du Connétable",
+        "typeLieu": "arene",
+        "presents": [
+          "Brunehaut",
+          "Aliénor",
+          "Odilon",
+          "Gauvain"
+        ],
+        "changements": [],
+        "journal": [],
+        "objectifsAccomplis": [],
+        "faits": [],
+        "promesses": [],
+        "souvenirs": [
+          {
+            "personnage": "Brunehaut",
+            "texte": "J'ai regardé le pupille travailler au poteau. Il frappe comme quelqu'un qui a porté des charges. On en fera quelque chose."
+          }
+        ],
+        "nouveauxPersonnages": [],
+        "codex": [],
+        "pistes": [
+          "Frapper les dix touches en soignant ses appuis",
+          "Demander un conseil à Dame Brunehaut",
+          "Caler son rythme sur celui d'Aliénor"
+        ],
+        "finCreneau": false,
+        "indiceRevele": false,
+        "humeur": "calme",
+        "effet": "aucun",
+        "meteo": "aucune",
+        "momentFort": null,
+        "combat": null,
+        "incoherence": ""
+      }
+    }
+  ],
+  "nuits": [
+    {
+      "resumeJour": "Premier jour à Astremont. Le héros a été inscrit comme pupille de la Couronne par maître Anselme et loge chambre onze, à l'Aile Basse, avec Odilon de Vaire. Au cours de droit des arcanes, maîtresse Vellane l'a interrogé devant toute la promotion ; au réfectoire, Maëlle l'a accueilli à la table du bout. À la lice, Dame Brunehaut l'a opposé à Aliénor de Hautefeuille, qui l'a ensuite débarrassé de Gauvain de Montreval dans la Galerie des Blasons, en assurant n'avoir rien fait pour lui. La journée s'est achevée sur le Toit des Cuisines avec Maëlle, puis au dortoir, entre les rillettes d'Odilon et la flûte du voisin.",
+      "horsChamp": [
+        {
+          "personnage": "Gauvain",
+          "action": "Il a écrit à son oncle une lettre brève et soignée au sujet du pupille, puis l'a recopiée pour en retirer le passage sur Aliénor.",
+          "consequence": "Dans les jours qui viennent, Gauvain sera d'une amabilité irréprochable en public, et mieux renseigné qu'il ne devrait l'être sur l'emploi du temps du héros."
+        },
+        {
+          "personnage": "Aliénor",
+          "action": "Elle a veillé tard sur un cahier de comptes, puis s'est exercée seule à la lice avant l'aube.",
+          "consequence": "Elle arrivera au premier cours la tresse impeccable et les traits tirés, une ampoule fraîche à la main droite."
+        },
+        {
+          "personnage": "Maëlle",
+          "action": "Elle a pris sur elle, devant Guillemette, la disparition de deux chaussons aux pommes.",
+          "consequence": "Elle est de corvée de linge le lendemain : on la croisera avec un panier dans des endroits où le linge n'a rien à faire."
+        },
+        {
+          "personnage": "Sibylle",
+          "action": "Elle a passé la soirée à réaccorder une à une les cloches de verre de la Tour des Harmoniques pour le cours des premières années.",
+          "consequence": "Les cloches du lendemain sont d'une sensibilité inhabituelle : le moindre accord y laisse une trace."
+        },
+        {
+          "personnage": "Isaure",
+          "action": "Elle est restée tard à la Bibliothèque du Chapitre avec le Coutumier d'Astremont, qu'elle a annoté au crayon.",
+          "consequence": "L'unique exemplaire du Coutumier porte désormais, au chapitre trois, de fines marques dans la marge."
+        }
+      ],
+      "opinions": [
+        {
+          "personnage": "Aliénor",
+          "opinion": "Il tient sa lame comme une fourche et il ne la lâche pas. C'était moins pénible à regarder que prévu."
+        },
+        {
+          "personnage": "Isaure",
+          "opinion": "La place quarante-sept a tenu sa première journée. Je l'ai interrogé pour l'entendre réfléchir ; je m'en veux un peu de l'avoir fait devant trente témoins."
+        },
+        {
+          "personnage": "Maëlle",
+          "opinion": "Il a une table, maintenant. Et il connaît le toit. Je ne sais pas pourquoi je lui ai montré le toit."
+        },
+        {
+          "personnage": "Sibylle",
+          "opinion": "Place quarante-sept : aucune lignée, donc aucune table de référence. Je l'ai demain à la Tour. Il faudra le mesurer sans avoir l'air de le mesurer."
+        },
+        {
+          "personnage": "Gauvain",
+          "opinion": "Il n'a pas mordu, dans la galerie. Ou bien on ne lui en a pas laissé le temps. Tant pis : j'ai tout le trimestre."
+        },
+        {
+          "personnage": "Brunehaut",
+          "opinion": "Des pieds qui ne savent rien et une main qui ne lâche pas. J'ai connu de bons soldats qui avaient commencé avec moins."
+        },
+        {
+          "personnage": "Odilon",
+          "opinion": "Je lui ai parlé jusqu'à m'endormir au milieu d'une phrase. Je crois que j'ai un ami. Il faudra l'écrire à maman."
+        }
+      ],
+      "arcs": [
+        {
+          "personnage": "Aliénor",
+          "avance": false
+        },
+        {
+          "personnage": "Isaure",
+          "avance": false
+        },
+        {
+          "personnage": "Maëlle",
+          "avance": false
+        },
+        {
+          "personnage": "Sibylle",
+          "avance": false
+        }
+      ]
+    },
+    {
+      "resumeJour": "Deuxième jour. À la Tour des Harmoniques, la cloche du héros est restée muette, mais les lunettes de Sibylle se sont mises à chanter, ce qui a enchanté la répétitrice. À la bibliothèque, il s'est retrouvé témoin d'une querelle entre maîtresse Vellane et Sibylle au sujet d'un mémoire trop long. À l'Intendance, il a touché trois écus de pension et vu, dans le registre, la bande de papier cachetée qui recouvre la case de son répondant. À la lice, Aliénor a corrigé son pied arrière et Dame Brunehaut a annoncé une passe d'armes notée dans huit jours : chacun doit se choisir un partenaire d'exercice. La soirée s'est passée sans éclat, entre la bibliothèque, le réfectoire et la chambre onze.",
+      "horsChamp": [
+        {
+          "personnage": "Isaure",
+          "action": "Elle a repris le mémoire de Sibylle, dénoué le ruban cette fois, et l'a lu jusqu'à la page quarante.",
+          "consequence": "Le mémoire reviendra à Sibylle avec une seule annotation au crayon, en marge de la page quarante."
+        },
+        {
+          "personnage": "Sibylle",
+          "action": "Elle a passé la soirée à tailler un diapason à la note supposée du héros, d'après le chant de ses lunettes.",
+          "consequence": "Elle le lui proposera à la première occasion, en s'excusant de l'avoir mesuré de mémoire."
+        },
+        {
+          "personnage": "Aliénor",
+          "action": "Elle a reçu une lettre de son père ; elle l'a lue deux fois, puis a rouvert son cahier de comptes.",
+          "consequence": "Elle sera plus cassante que d'ordinaire le lendemain matin, et s'en excusera à sa manière : par un conseil technique."
+        },
+        {
+          "personnage": "Maëlle",
+          "action": "Elle a raconté la séance de lice à toute la cuisine, en imitant Aliénor.",
+          "consequence": "Guillemette appellera désormais le héros « le râteau », avec affection."
+        },
+        {
+          "personnage": "Gauvain",
+          "action": "Il a fait savoir à la cantonade qu'il cherchait pour la passe d'armes un partenaire « méritant », et a souri à Odilon.",
+          "consequence": "Odilon recevra de lui une proposition flatteuse et ne saura pas quoi en penser."
+        },
+        {
+          "personnage": "Anselme",
+          "action": "Il a rangé le grand registre dans l'armoire à double serrure, et non sur son comptoir comme les autres soirs.",
+          "consequence": "À la prochaine visite à l'Intendance, le registre ne sera plus à portée de main."
+        }
+      ],
+      "opinions": [
+        {
+          "personnage": "Aliénor",
+          "opinion": "Son pied arrière est presque en place. Il apprend plus vite qu'il ne devrait, et il écoute. C'est agaçant : je n'ai plus rien à lui reprocher sur ce point."
+        },
+        {
+          "personnage": "Isaure",
+          "opinion": "Il m'a vue par terre avec une poire et n'a pas eu l'air de trouver cela indigne d'une chaire. C'est reposant. Il regarde bien, aussi ; il faudra m'en souvenir."
+        },
+        {
+          "personnage": "Maëlle",
+          "opinion": "Le râteau progresse. Hautefeuille lui tourne autour avec ses conseils ; ça ne me plaît qu'à moitié, et je ne vois pas pourquoi ça me regarderait."
+        },
+        {
+          "personnage": "Sibylle",
+          "opinion": "Il a fait chanter mes lunettes au lieu de la cloche. Aucune table ne prévoit ça. Et il était là quand Vellane m'a dit de prouver plus court : j'ai un témoin, maintenant."
+        },
+        {
+          "personnage": "Gauvain",
+          "opinion": "Brunehaut lui a dit « mieux » devant tout le monde. Il va falloir être plus fin qu'une plaisanterie sur un râteau."
+        },
+        {
+          "personnage": "Brunehaut",
+          "opinion": "Il a corrigé son pied en un jour. Reste à voir qui il prend comme partenaire : on choisit rarement par hasard."
+        },
+        {
+          "personnage": "Anselme",
+          "opinion": "Il a regardé ma main sur le buvard. Ce garçon voit les choses. J'espère qu'il sait aussi attendre."
+        },
+        {
+          "personnage": "Odilon",
+          "opinion": "S'il me choisit pour la passe d'armes, je m'entraînerai tous les jours. Même contre le poteau. Surtout contre le poteau."
+        }
+      ],
+      "arcs": [
+        {
+          "personnage": "Aliénor",
+          "avance": false
+        },
+        {
+          "personnage": "Isaure",
+          "avance": false
+        },
+        {
+          "personnage": "Maëlle",
+          "avance": false
+        },
+        {
+          "personnage": "Sibylle",
+          "avance": true
+        }
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "intention": "Installer la routine des cours et faire entrer Sibylle dans le quotidien du héros, sans rien précipiter.",
+      "consignes": [
+        {
+          "creneau": "matin",
+          "type": "quotidien",
+          "consigne": "Premier travail pratique à la Tour des Harmoniques : faire chanter une cloche de verre. Maladresse, humour, enthousiasme de Sibylle. Puis l'heure d'étude libre à la bibliothèque, où le héros croise maîtresse Vellane loin de sa chaire.",
+          "personnages": [
+            "Sibylle",
+            "Isaure",
+            "Odilon"
+          ]
+        },
+        {
+          "creneau": "midi",
+          "type": "mystere",
+          "consigne": "Passage à l'Intendance pour émarger et toucher la pension. Un seul détail dans le registre, montré par un geste d'Anselme, sans aucun commentaire ; tout le reste parle de chandelles et de blanchissage.",
+          "personnages": [
+            "Anselme"
+          ]
+        },
+        {
+          "creneau": "apres-midi",
+          "type": "relation",
+          "consigne": "Deuxième séance de lice. Aliénor tient parole et corrige la garde du héros ; Dame Brunehaut annonce la passe d'armes. Finir sur le choix d'un partenaire d'exercice.",
+          "personnages": [
+            "Aliénor",
+            "Brunehaut",
+            "Maëlle"
+          ]
+        },
+        {
+          "creneau": "soir",
+          "type": "quotidien",
+          "consigne": "Étude à la bibliothèque puis souper à la table du bout : bavardages, fatigue heureuse. Aucune allusion au registre.",
+          "personnages": [
+            "Sibylle",
+            "Odilon",
+            "Maëlle"
+          ]
+        },
+        {
+          "creneau": "nuit",
+          "type": "quotidien",
+          "consigne": "Chambre onze : Odilon, la lettre de sa mère et le flûtiste d'à côté. Laisser le héros souffler.",
+          "personnages": [
+            "Odilon"
+          ]
+        }
+      ],
+      "tension": 2,
+      "finDeChapitre": false,
+      "finDeLHistoire": false
+    },
+    {
+      "intention": "Laisser les liens se tisser : le choix du partenaire d'exercice a des suites, et chacun commence à prendre ses habitudes.",
+      "consignes": [
+        {
+          "creneau": "matin",
+          "type": "quotidien",
+          "consigne": "Exercice aux poteaux à la lice : les binômes font leurs premiers pas, maladroits. Dame Brunehaut observe, commente peu.",
+          "personnages": [
+            "Brunehaut",
+            "Aliénor",
+            "Odilon"
+          ]
+        },
+        {
+          "creneau": "midi",
+          "type": "relation",
+          "consigne": "Table du bout : Maëlle veut tout savoir du partenaire choisi et donne son avis sans qu'on le lui demande.",
+          "personnages": [
+            "Maëlle",
+            "Odilon"
+          ]
+        },
+        {
+          "creneau": "apres-midi",
+          "type": "quotidien",
+          "consigne": "Cours de droit des arcanes : maîtresse Vellane rend les premiers devoirs, annotés sans pitié et avec humour.",
+          "personnages": [
+            "Isaure",
+            "Gauvain",
+            "Sibylle"
+          ]
+        },
+        {
+          "creneau": "soir",
+          "type": "libre",
+          "consigne": "Temps libre : laisser le héros choisir où aller et avec qui, et répondre à son initiative, sans intrigue.",
+          "personnages": []
+        },
+        {
+          "creneau": "nuit",
+          "type": "quotidien",
+          "consigne": "Chambre onze : un devoir à finir, une chemise à recoudre, les confidences d'Odilon.",
+          "personnages": [
+            "Odilon"
+          ]
+        }
+      ],
+      "tension": 2,
+      "finDeChapitre": false,
+      "finDeLHistoire": false
+    }
+  ],
+  "chapitre": {
+    "resumeChapitre": "Le héros, roturier sans appui, est entré à l'Académie royale d'Astremont comme pupille de la Couronne, le premier depuis soixante ans. Il loge chambre onze, à l'Aile Basse, avec Odilon de Vaire, cadet d'une baronnie sans le sou, devenu son premier ami. Maëlle, « la Rayée », lui a ouvert la table du bout et son refuge du Toit des Cuisines. À la lice, Dame Brunehaut l'a opposé à Aliénor de Hautefeuille, qui l'a d'abord humilié, puis l'a débarrassé de Gauvain de Montreval dans la Galerie des Blasons et a entrepris de corriger sa garde. À la Tour des Harmoniques, son premier accord a fait chanter les lunettes de la répétitrice Sibylle Orfraie au lieu de sa cloche, pour la plus grande joie de celle-ci. Maîtresse Vellane, qui l'appelle « place quarante-sept », l'interroge plus souvent que les autres et se dispute avec Sibylle au sujet d'un mémoire trop long. À l'Intendance, il a remarqué que la case de son répondant, dans le registre, est recouverte d'une bande de papier cachetée de cire grise. La semaine s'achève sur l'annonce d'une passe d'armes notée, pour laquelle chacun a dû se choisir un partenaire.",
+    "chronique": "Le royaume de Sarrance vit sous le règne d'Aldric IV, que l'on ne voit plus en public depuis le printemps. À l'automne, un roturier pauvre est admis à l'Académie royale d'Astremont comme pupille de la Couronne, en récompense d'une sacoche royale rapportée à bon port ; aucun pupille n'y avait été inscrit depuis soixante ans. Maître Anselme, l'intendant, lui attribue la chambre onze de l'Aile Basse, qu'il partage avec Odilon de Vaire. Dès le premier cours, maîtresse Isaure Vellane, qui enseigne le droit des arcanes, l'interroge devant toute la promotion sous le nom de « place quarante-sept ». Au Grand Réfectoire, où l'on s'assoit par maisons, il trouve sa place à la table du bout, auprès de Maëlle Tarn, que l'on surnomme « la Rayée ». À la Lice du Connétable, Dame Brunehaut lui donne pour partenaire Aliénor de Hautefeuille, la meilleure lame de la promotion, qui compare sa garde à une fourche. Le soir même, Gauvain de Montreval, neveu du chancelier, l'attend dans la Galerie des Blasons pour le railler et lui rappeler qu'un élève de première année n'a pas le droit de se battre ; Aliénor y met fin d'une phrase. Maëlle l'emmène ensuite sur le Toit des Cuisines, d'où l'on voit la lanterne verte du four de Perrin. Le deuxième jour, à la Tour des Harmoniques, la cloche de verre du héros reste muette tandis que les lunettes de Sibylle Orfraie se mettent à chanter. À la Bibliothèque du Chapitre, il assiste à une querelle entre maîtresse Vellane et Sibylle, dont le mémoire de cent quarante pages est refusé sans être lu. À l'Intendance, en signant le registre, il voit que la case de son répondant est masquée par une bande de papier cachetée de cire grise, sur laquelle maître Anselme pose son buvard sans un mot. À la lice, Aliénor corrige son pied arrière, Dame Brunehaut lui accorde un « mieux », et une passe d'armes notée est annoncée pour la semaine suivante. Les jours suivants prennent le pli de l'académie : étude à la bibliothèque, repas à la table du bout, poteaux à la lice, soirées dans la chambre onze. Le héros commence à avoir, à Astremont, des habitudes et des gens qui l'attendent."
+  },
+  "verdict": {
+    "verdict": "partielle",
+    "commentaire": "Il y a du vrai dans ce que vous rapprochez : ces éléments ont bien un lien, et vous n'êtes sans doute pas le seul à l'avoir remarqué. Mais votre conclusion va plus vite que vos preuves. Il vous manque encore de savoir à qui il importait que les choses soient ainsi. Gardez cette piste ouverte, et regardez qui se tait quand vous vous en approchez.",
+    "consequence": ""
+  },
+  "epilogue": "Vous avez cru, comme tout le monde, à un concours de circonstances : une sacoche royale rapportée à bon port, un commis de la Chancellerie d'humeur généreuse, une lettre de pupille. La vérité est que le roi Aldric se mourait depuis le printemps, que son héritière était une enfant, et que la vieille Charte d'Astremont confiait le choix du régent à trois voix : l'Épée, la Robe et le Commun. La troisième dormait depuis soixante ans, faute de pupille pour la porter. Tant qu'elle dormait, l'égalité des deux autres remettait la décision au chancelier de Montreval, qui avait fait ses comptes. Vous étiez, à vous seul, la voix du Commun : un tiers du royaume, logé chambre onze, sous une pente de toit.\n\nCelle qui vous a fait venir, c'est maîtresse Vellane. Elle avait lu la clause que plus personne ne lisait ; elle a fait signer votre lettre par le roi lui-même, un matin où il avait toute sa tête, et elle s'est portée garante de vous sous une goutte de cire grise. Elle vous a choisi parce que vous ne deviez rien à personne. Si elle ne vous a jamais appelé que « place quarante-sept », ce n'était pas froideur : c'était la seule façon qu'elle avait trouvée de ne pas s'attacher à un argument. Elle y a d'ailleurs échoué. Le duc de Hautefeuille avait ordonné à sa fille de faire de vous son obligé ; Gauvain tenait de son oncle l'ordre de vous faire renvoyer. Maëlle et Sibylle, elles, ne savaient rien : c'est sans doute pourquoi leur table et leurs diapasons vous ont paru si simples.\n\nDeux fois, tout aurait pu basculer. La première, dès le premier soir, dans la Galerie des Blasons. Gauvain ne cherchait pas à vous humilier : il cherchait un coup. Un élève de première année qui frappe un condisciple hors de la lice est renvoyé avant la nuit, et la voix du Commun se serait éteinte sans que personne ait su qu'elle existait. Ce qui s'est joué ce soir-là, entre votre poing et votre patience, c'était une régence ; et Aliénor de Hautefeuille, en dérangeant le piège parce qu'il « encombrait », a rendu au royaume un service dont elle ignorait tout.\n\nLa seconde tenait sous un buvard. À l'Intendance, sur votre ligne du registre, la bande de papier cachait un nom et un paraphe : celui de maîtresse Vellane, et, au-dessous, la signature tremblée du roi. Soulevée trop tôt, devant le mauvais témoin, elle aurait livré à la Chancellerie celle qui vous protégeait, et la clause avec elle. Maître Anselme le savait, lui qui compte les chandelles et se tait depuis quarante ans : sa main posée à plat, comme par hasard, est peut-être le geste le plus courageux de cette histoire. Le reste — ce que vous avez fait de votre voix, et pour qui — vous appartient. C'est bien la seule chose, à Astremont, qu'on n'ait jamais pu décider à votre place."
+}
