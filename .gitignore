@@ -11,3 +11,4 @@ coverage/
 .env
 .env.*
 smoke-*.png
+smoke/

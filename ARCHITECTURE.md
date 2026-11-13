@@ -149,9 +149,10 @@ SQLite, un fichier `resonance.db` dans le dossier de données utilisateur.
 | `images` | partie, clé (`sprite:<perso>:<expression>`, `decor:<lieu>:<lumière>`, `cg:<id>`), fichier, prompt, graine, fournisseur |
 | `usage` | horodatage, partie, rôle, fournisseur, modèle, jetons (entrée, sortie, cache), coût estimé |
 | `reglages` | clé / valeur JSON |
-| `journal_appels` | panneau de développement : prompts et réponses brutes (clés exclues) |
 
 L'**arbre des sauvegardes** découle de la table `scenes` : chaque scène porte l'état complet qui la suit. « Revenir à un embranchement » = déplacer `tete` sur une scène plus ancienne ; continuer crée une branche sœur. La transcription d'une partie est le chemin de la racine à `tete`.
+
+Le journal des appels du panneau de développement (consignes et réponses brutes, clés exclues) reste en mémoire vive : 150 entrées, jamais écrites sur le disque.
 
 `GameState` (voir `src/shared/types.ts`) : héros, monde, personnages, factions, lieux, journal, calendrier, mémoire, rythme, plan du jour, jet en attente, combat, enquête, succès.
 

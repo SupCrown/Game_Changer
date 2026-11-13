@@ -8,6 +8,7 @@
   "main": "./out/main/index.js",
   "author": "jkebaili",
   "scripts": {
+    "postinstall": "node node_modules/electron/install.js",
     "dev": "electron-vite dev",
     "build": "electron-vite build",
     "start": "electron-vite preview",
@@ -15,7 +16,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest",
-    "smoke": "electron-vite build && electron ./out/main/index.js --smoke",
+    "smoke": "electron-vite build && electron . --smoke",
     "dist": "electron-vite build && electron-builder --win",
     "dist:all": "electron-vite build && electron-builder -wml"
   },

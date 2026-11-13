@@ -1,7 +1,7 @@
 /**
  * Point d'entrée Electron : fenêtre, sécurité, protocole d'images, pont IPC.
  */
-import { app, BrowserWindow, dialog, ipcMain, nativeImage, net, protocol, safeStorage, shell } from 'electron'
+import { app, BrowserWindow, dialog, ipcMain, nativeImage, net, protocol, safeStorage, session, shell } from 'electron'
 import { existsSync, mkdtempSync, readFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { dirname, extname, join } from 'node:path'
@@ -193,6 +193,18 @@ void app.whenReady().then(() => {
       return new Response('', { status: 404 })
     }
   })
+
+  // Politique de sécurité du contenu : rien ne se charge depuis l'extérieur. (En développement, Vite a besoin de scripts en ligne.)
+  if (!DEV) {
+    session.defaultSession.webRequest.onHeadersReceived((details, rappel) => {
+      rappel({
+        responseHeaders: {
+          ...details.responseHeaders,
+          'Content-Security-Policy': ["default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' resonance-media: data: blob:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'"],
+        },
+      })
+    })
+  }
 
   enregistrerPont()
   fenetre = creerFenetre()

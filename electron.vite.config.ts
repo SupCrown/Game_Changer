@@ -13,6 +13,8 @@ export default defineConfig({
   },
   preload: {
     resolve: { alias },
+    // Le preload tourne dans le bac à sable d'Electron : il doit être en CommonJS.
+    build: { rollupOptions: { output: { format: 'cjs', entryFileNames: '[name].cjs' } } },
   },
   renderer: {
     resolve: { alias: { ...alias, '@renderer': resolve('src/renderer/src') } },

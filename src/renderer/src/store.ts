@@ -217,7 +217,7 @@ export const useJeu = create<Jeu>((set, get) => ({
       case 'etat':
         return set({ etat: e.etat, jet: e.etat.jetEnAttente, epilogue: e.etat.epilogue ?? s.epilogue })
       case 'notifications':
-        return set({ notifications: [...s.notifications, ...e.liste.map((n) => ({ ...n, id: ++compteur }))].slice(-8) })
+        return set({ notifications: [...s.notifications, ...e.liste.map((n) => ({ ...n, id: ++compteur }))].slice(-5) })
       case 'jet':
         return set({ jet: e.demande })
       case 'jet-resultat':
@@ -228,8 +228,19 @@ export const useJeu = create<Jeu>((set, get) => ({
         return set({ ambiance: { humeur: e.humeur, effet: e.effet ?? null, meteo: e.meteo ?? null, id: ++compteur } })
       case 'transition':
         return set({ transition: { titre: e.titre, sousTitre: e.sousTitre, id: ++compteur } })
-      case 'cout':
-        return set({ bilan: e.bilan })
+      case 'cout': {
+        // Alerte quand la dépense franchit 80 % d'un plafond.
+        const franchit = (avant: number, apres: number, plafond: number) => plafond > 0 && avant < plafond * 0.8 && apres >= plafond * 0.8
+        const b = e.bilan
+        const alerte = s.reglages.couts.alerte && s.bilan
+          && (franchit(s.bilan.session, b.session, b.plafondSession) || franchit(s.bilan.partie, b.partie, b.plafondPartie))
+        return set({
+          bilan: b,
+          notifications: alerte
+            ? [...s.notifications, { id: ++compteur, genre: 'refus' as const, texte: 'Vous avez dépensé 80 % d’un plafond de coût (Menu › Coûts).' }]
+            : s.notifications,
+        })
+      }
       case 'erreur': {
         if (e.erreur.genre === 'annule') return
         // Si la narration a échoué en cours de route, la scène inachevée disparaît et le texte du joueur lui est rendu.

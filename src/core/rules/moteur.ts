@@ -238,10 +238,8 @@ export function appliquerDecouvertes(source: GameState, rapport: RapportScene): 
 
   for (const nom of rapport.presents) {
     const p = trouverParNom(etat.personnages, nom)
-    if (p && !p.rencontre) {
-      p.rencontre = true
-      notes.push({ genre: 'codex', texte: `Rencontre : ${p.nom}`, cible: p.id })
-    }
+    // Pas de notification : la rencontre se lit dans la scène, et le codex la consigne.
+    if (p && !p.rencontre) p.rencontre = true
   }
   for (const n of rapport.nouveauxPersonnages) {
     if (trouverParNom(etat.personnages, n.nom) || etat.personnages.length >= 40) continue

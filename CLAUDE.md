@@ -2,52 +2,26 @@
 
 Visual novel adaptatif mené par une IA. Cahier des charges : `PROMPT_claude_code_visual_novel.md`. Choix techniques et flux d'un tour : `ARCHITECTURE.md`.
 
-## ÉTAT AU 12/11/2026 — TRAVAIL INTERROMPU EN COURS D'ÉTAPE
+## État au 13/11/2026
+Détail par étape dans `ROADMAP.md` (légende Fait / Écrit / À faire).
 
-Arrêt demandé par l'utilisateur (coût de la session). **Rien n'est commité** (le dépôt n'a encore aucun commit). **L'application n'a encore jamais été construite ni lancée** : seuls le cœur et les tests ont été exécutés.
+- **Vérifié** : 98 tests Vitest ; `tsc` propre ; `npm run smoke` lance le vrai jeu en mode démonstration (4 scènes, un jet, une nuit, tous les panneaux) sans erreur, captures relues.
+- **Écrit mais jamais essayé contre un vrai service** : fournisseurs Claude, Ollama, compatible OpenAI ; ComfyUI, Automatic1111, API d'images ; détourage sur une vraie image ; installateur (`npm run dist`).
+- **Jamais observé** : musique (jamais écoutée), voix, météo, interface de combat (la démo n'a pas de combat), épilogue à l'écran.
 
-### Ce qui est écrit ET vérifié (92 tests Vitest verts, `tsc` propre sur le cœur)
-- `src/shared/types.ts`, `src/shared/ipc.ts`, `src/shared/i18n.ts` — contrat de données, contrat IPC, i18n façon gettext (le texte français est la clé).
-- `src/core/rules/` — `des.ts`, `moteur.ts` (bornes, Résonance, jalousie, paliers, réputation), `rythme.ts` (budget de mystère + calendrier), `combat.ts`, `regles.ts`.
-- `src/core/ai/` — `schemas.ts` (schémas Zod + lecture tolérante), `prose.ts` (analyseur de la prose du Narrateur), `types.ts`, `prompts/fr.ts`, `fournisseurs/{anthropic,ollama,openai,mock}.ts`.
-- `src/core/memory/` — `contexte.ts` (assemblage pour le cache des prompts, compaction), `vecteurs.ts`.
-- `src/core/storage/depot.ts` — SQLite (`node:sqlite`), arbre de scènes, export/import.
-- `src/core/game/` — `creation.ts` (état initial, succès), `session.ts` (tour complet, jets, cycle de nuit, combat, enquête, épilogue, arbre des sauvegardes).
-- `tests/` — `regles.test.ts`, `ia.test.ts`, `session.test.ts`, `audio.test.ts`, `outils.ts`.
-- `packs/demo/histoire.json` (« La Troisième Voix », 12 scènes + 4 génériques) et `packs/univers/*.json` (6 univers) — contrôlés par script.
-- `src/renderer/src/audio/{moteur,partitions}.ts` — musique et effets procéduraux (testés, essayés dans Electron, **jamais écoutés**).
-
-### Ce qui est écrit mais JAMAIS compilé ni lancé
-- `src/core/images/` — `prompts.ts`, `detourage.ts`, `fournisseurs.ts` (ComfyUI, A1111, API OpenAI Images), `service.ts`.
-- `src/main/` — `index.ts`, `application.ts`, `secrets.ts`, `smoke.ts` ; `src/preload/index.ts`.
-- `src/renderer/` — `index.html`, `src/main.tsx`, `store.ts`, `styles.css`, `outils.tsx`, `essai.ts`, `voix.ts`, `ecrans/Titre.tsx`, `ecrans/NouvellePartie.tsx`, `jeu/De3D.tsx`, `jeu/Meteo.tsx`.
-
-### Ce qui est INCOMPLET (agent arrêté en plein travail)
-- `src/core/images/procedural/` : `alea.ts`, `decor.ts` (96 Ko), `sprite.ts` (61 Ko) existent, **non relus, non testés**. Il manque `illustration.ts`, `index.ts` et `tests/procedural.test.ts`. `service.ts` importe `./procedural` → **le projet ne compile pas tant que `index.ts` n'existe pas**.
-  API attendue : `decorSvg({type, lumiere, graine, theme, nom?})`, `spriteSvg({graine, expression, couleur, apparence?, theme})`, `illustrationSvg({graine, titre, humeur, theme})`, type `ThemeArt`.
-
-### Ce qui n'existe pas encore
-- `src/renderer/src/ecrans/Jeu.tsx` (importé par `main.tsx`) : décor, sprites, boîte de dialogue, saisie, pistes, carte de jet, dé 3D, combat, notifications, transition, erreurs, épilogue, clavier.
-- `src/renderer/src/panneaux/` : `Reglages.tsx` (importé par `Titre.tsx`), menu « grimoire » et panneaux fiche, liens, factions, journal, enquête, codex, emploi du temps, relations, sauvegardes, galerie, succès, coûts, dev, historique.
-- `packs/regles/defaut.json` (facultatif, le code a ses valeurs par défaut).
-- `ROADMAP.md`, `README.md`.
-
-## PROCHAINES ACTIONS, DANS L'ORDRE
-1. `src/renderer/src/jeu/De3D.tsx` — correctif en attente, non appliqué : remplacer le `color-mix()` passé à `ctx.fillStyle` par un mélange RGB calculé, et passer la prop `valeur` de `number` à `string` (étiquette de face).
-2. Terminer `src/core/images/procedural/` : relire `decor.ts` et `sprite.ts`, écrire `illustration.ts` et `index.ts`, puis le test.
-3. Écrire `Jeu.tsx` puis `panneaux/` (les classes CSS existent déjà dans `styles.css`).
-4. `src/main/index.ts` : ajouter l'en-tête CSP hors développement (`session.webRequest.onHeadersReceived`).
-5. `electron.vite.config.ts` : forcer le preload en CommonJS, fichier `index.cjs` (`main/index.ts` charge `../preload/index.cjs`, bac à sable activé).
-6. `npx tsc --noEmit -p tsconfig.json`, puis `npm run build`, puis `npm run smoke` et regarder les captures dans `smoke/`.
-7. `package.json` : ajouter `"postinstall": "node node_modules/electron/install.js"`.
-8. `ROADMAP.md`, `README.md` (français simple), puis premier commit.
-9. `ARCHITECTURE.md` §7 : retirer la table `journal_appels` (le journal du panneau dev est en mémoire, 150 entrées).
+## Prochaines actions
+1. Essayer Claude puis Ollama sur une vraie partie (il faut une clé ou un serveur) ; corriger ce qui casse ; vérifier le taux de cache dans Menu › Coûts.
+2. Écouter la musique ; régler `NIVEAU_MUSIQUE` et les niveaux de `PARTITIONS` (`src/renderer/src/audio/`).
+3. `npm run dist` ; corriger l'empaquetage si besoin (les `packs/` doivent partir en `extraResources`).
+4. Sprite procédural : un personnage masculin sans le mot « homme » dans sa description est dessiné au féminin (`lireApparence` dans `procedural/sprite.ts`). Passer le genre depuis la fiche.
+5. Alléger le paquet du renderer (937 Ko) : n'importer que les sous-ensembles latins des polices.
+6. Extraire les messages français du cœur (erreurs, notifications) vers `t()` pour une vraie traduction.
 
 ## Commandes
 - `npm test` — tests (sans clé, sans coût).
 - `npm run typecheck` — vérification des types.
 - `npm run dev` — développement ; `npm run jouer` — construire et lancer.
-- `npm run smoke` — essai de bout en bout avec captures d'écran (dossier jetable, ne touche pas aux sauvegardes).
+- `npm run smoke` — essai de bout en bout avec captures d'écran dans `smoke/` (dossier de données jetable, ne touche pas aux sauvegardes). Toujours relire quelques captures après un changement d'interface.
 
 ## Conventions
 - Code, commentaires et identifiants en français. Interface : tout texte visible passe par `t('…')`.
@@ -57,7 +31,10 @@ Arrêt demandé par l'utilisateur (coût de la session). **Rien n'est commité**
 - Tout ce qui varie d'un tour à l'autre va dans le dernier message du Narrateur, jamais avant (cache des prompts). Test : « garde un préfixe identique d'un tour à l'autre » dans `tests/ia.test.ts`.
 
 ## Pièges connus
-- **npm 11 bloque les scripts d'installation** : après `npm install`, le binaire Electron manque → `node node_modules/electron/install.js`.
+- **npm 11 bloque les scripts d'installation des dépendances** : le `postinstall` du projet télécharge le binaire Electron ; en cas d'échec, `node node_modules/electron/install.js`.
+- **Dans le terminal de VS Code, `ELECTRON_RUN_AS_NODE=1` est défini** : Electron se lance alors comme un simple Node et plante sur `import { BrowserWindow }`. Lancer avec `env -u ELECTRON_RUN_AS_NODE …` (bash) ou depuis un terminal ordinaire.
+- `webContents.capturePage()` sur une fenêtre inactive peut rendre l'image précédente : `smoke.ts` appelle `invalidate()` et capture deux fois.
+- electron-vite : le preload est forcé en CommonJS (`index.cjs`) car le bac à sable est activé ; la CSP est posée par en-tête hors développement seulement (Vite a besoin de scripts en ligne en dev).
 - **Le projet est dans un dossier OneDrive** : `node_modules` y est synchronisé (lent, risque de fichiers verrouillés). Idéalement, déplacer le dépôt hors de OneDrive.
 - Claude Opus 5.5 / Sonnet 5.5 : `thinking` ne se désactive pas, pas de `temperature`, pas de `tool_choice` forcé ; les sorties structurées passent par `output_config.format`.
 - Dans le faux fournisseur, l'index de scène vient de `meta.index` (nombre de scènes du chemin), pas de `stats.scenes`.

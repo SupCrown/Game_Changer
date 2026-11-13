@@ -27,7 +27,11 @@ export async function lancerSmoke(f: BrowserWindow, application: Application): P
 
   const js = <T = unknown>(code: string): Promise<T> => f.webContents.executeJavaScript(code, true)
   const capture = async (nom: string) => {
-    await attendre(450)
+    // Fenêtre inactive : on force un nouveau rendu, sinon la capture peut dater de l'image précédente.
+    await attendre(500)
+    f.webContents.invalidate()
+    await attendre(350)
+    await f.webContents.capturePage()
     const image = await f.webContents.capturePage()
     writeFileSync(join(dossier, `${nom}.png`), image.toPNG())
   }

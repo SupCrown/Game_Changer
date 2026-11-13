@@ -28,7 +28,15 @@ function tourner(v: V3, k: V3, angle: number): V3 {
 
 const CENTRES: V3[] = FACES.map(([a, b, c]) => norme([SOMMETS[a][0] + SOMMETS[b][0] + SOMMETS[c][0], SOMMETS[a][1] + SOMMETS[b][1] + SOMMETS[c][1], SOMMETS[a][2] + SOMMETS[b][2] + SOMMETS[c][2]]))
 
-export function De3D(p: { valeur: number; etiquettes: string[]; taille?: number; couleur?: string; duree?: number; onFini?(): void }) {
+/** Mélange une couleur hexadécimale avec un brun sombre (part 0..1 de la couleur). */
+function teinte(hex: string, part: number): string {
+  const n = parseInt(hex.replace('#', '').padEnd(6, '0').slice(0, 6), 16)
+  const c = [(n >> 16) & 255, (n >> 8) & 255, n & 255]
+  const sombre = [20, 16, 10]
+  return `rgb(${c.map((v, i) => Math.round(sombre[i] + (v - sombre[i]) * part)).join(',')})`
+}
+
+export function De3D(p: { valeur: string; etiquettes: string[]; taille?: number; couleur?: string; duree?: number; onFini?(): void }) {
   const ref = useRef<HTMLCanvasElement>(null)
   const taille = p.taille ?? 240
 
@@ -38,7 +46,7 @@ export function De3D(p: { valeur: number; etiquettes: string[]; taille?: number;
     const dpr = window.devicePixelRatio || 1
     canvas.width = canvas.height = taille * dpr
     ctx.scale(dpr, dpr)
-    const face = Math.max(0, p.etiquettes.indexOf(String(p.valeur)))
+    const face = Math.max(0, p.etiquettes.indexOf(p.valeur))
     // Rotation finale : amène le centre de la face voulue sur l'axe du regard (+z).
     const cible = CENTRES[face]
     const regard: V3 = [0, 0, 1]
@@ -76,7 +84,7 @@ export function De3D(p: { valeur: number; etiquettes: string[]; taille?: number;
         const [pa, pb, pc] = [proj(f.a), proj(f.b), proj(f.c)]
         ctx.beginPath()
         ctx.moveTo(...pa); ctx.lineTo(...pb); ctx.lineTo(...pc); ctx.closePath()
-        ctx.fillStyle = `color-mix(in srgb, ${p.couleur ?? '#d9b56d'} ${Math.round(28 + lumiere * 62)}%, #14100a)`
+        ctx.fillStyle = teinte(p.couleur ?? '#d9b56d', 0.28 + lumiere * 0.62)
         ctx.fill()
         ctx.strokeStyle = 'rgba(255, 244, 214, 0.55)'
         ctx.lineWidth = 1.2
